@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>task</collection>
+        <condition>!current.isNewRecord() &amp;&amp; new JiraCustomUtils().isOutboundAPIEnabled() &amp;&amp; new JiraCustomUtils().isTableAllowed(current.getValue("sys_class_name"));</condition>
+        <description>We need to send some server data to the client side (client script and UI Actions) so that we know what to do with the Jira information on the form.&#13;
+If the g_scratchpad.jiraSettings is not visibile, the client script will hide the Jira Information tab.&#13;
+&#13;
+Client Script: Hide Jira Section UI&#13;
+UI Actions:  Send Notes To Jira / Send To Jira</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Jira Scratchpad Settings</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var tableLabel = current.getLabel();
+	var taskDisplay = current.getValue("number");
+
+	g_scratchpad.jiraSettings = {
+		titleInitialModal: gs.getMessage("Send {0} '{1}' to Jira", [tableLabel, taskDisplay]),
+		titleNotesModal: gs.getMessage("Add notes from {0} '{1}' to Jira", [tableLabel, taskDisplay])
+	};
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-18 12:15:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6ceea4b0835e4250c54c1e60ceaad3ab</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Jira Scratchpad Settings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_script_6ceea4b0835e4250c54c1e60ceaad3ab</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 15:52:22</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6ceea4b0835e4250c54c1e60ceaad3ab"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260c20000001</claim_timestamp>
+        <metadata_update_name>sys_script_6ceea4b0835e4250c54c1e60ceaad3ab</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>23a8f5ae47eec6908bb7bf99516d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

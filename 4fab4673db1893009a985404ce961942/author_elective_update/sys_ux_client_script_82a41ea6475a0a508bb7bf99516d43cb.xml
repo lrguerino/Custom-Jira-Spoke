@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Jira Information SOW">beb68c2d47dac2508bb7bf99516d437e</macroponent>
+        <name>Monitor Integration Status Value</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({ api, event, helpers, imports }) {
+
+    if (!event.payload) {
+        return;
+    }
+
+    const fieldName = event.payload.fieldName;
+
+    if (fieldName !== "u_jira_ebonding_status") {
+        return;
+    }
+
+    // We only refresh the Glide Form if the integration status has changed
+    // This will then help with the UI Action or buttons to function properly without having to refresh the entire page
+
+    api.data.glide_current_form_record.reload();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-24 07:06:21</sys_created_on>
+        <sys_id>82a41ea6475a0a508bb7bf99516d43cb</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Monitor Integration Status Value</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-24 09:48:34</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Jira Information SOW"&gt;beb68c2d47dac2508bb7bf99516d437e&lt;/macroponent&gt;&lt;name&gt;Monitor Integration Status Value&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({ api, event, helpers, imports }) {
+
+    if (!event.payload) {
+        return;
+    }
+
+    const fieldName = event.payload.fieldName;
+
+    if (fieldName !== "u_jira_ebonding_status") {
+        return;
+    }
+
+    // We only refresh the Glide Form if the integration status has changed
+    // This will then help with the UI Action or buttons to function properly without having to refresh the entire page
+
+    api.data.glide_current_form_record.reload();
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-24 07:06:21&lt;/sys_created_on&gt;&lt;sys_id&gt;82a41ea6475a0a508bb7bf99516d43cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;25&lt;/sys_mod_count&gt;&lt;sys_name&gt;Monitor Integration Status Value&lt;/sys_name&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-24 09:48:34&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2129306731</payload_hash>
+        <record_name>Monitor Integration Status Value</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-24 09:48:34</sys_created_on>
+        <sys_id>ae38472a471e0a508bb7bf99516d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18faa00906e0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-24 09:48:34</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>2638472a431e0a503dc7db72d8ac5809</update_guid>
+        <update_guid_history>2638472a431e0a503dc7db72d8ac5809:2129306731,1708432aab1e0a504412becba84affc5:-1140713745,7ef683e63a1e0a50a5de45ed9349ad08:2129306731,9c4687a62a1e0a507e044ee8a149e583:250562507,c0ae2662edda0a50d73e96621960db78:2129306731,dc3e6e225dda0a50b062230e523e3dc1:646714636,af9de2228eda0a50778a2cc45a53bdb8:420563074,cefbeaae489a0a5098123e2d21f247d2:-653450045,040762aab99a0a508feae741ccc077ed:502504038,05f662aaea9a0a5000dbbe93ced0f452:-1755387898,e105e22a609a0a50eba88df8a2afecb3:1340072660,fec4eee6259a0a504eaae6de8844b253:-2140081996,1a132aa6ca9a0a50526902ab6871462e:-1774832468</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-24 09:55:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>14c46c82fbd64f9682cf373e70057f09</sys_id>
+        <sys_metadata>82a41ea6475a0a508bb7bf99516d43cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitor Integration Status Value</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb">ae38472a471e0a508bb7bf99516d4309</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-24 09:55:22</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262600000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_82a41ea6475a0a508bb7bf99516d43cb</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>73a8f5ae47eec6908bb7bf99516d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

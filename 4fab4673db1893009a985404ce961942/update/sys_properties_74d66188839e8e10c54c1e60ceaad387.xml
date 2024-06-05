@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Identifier of the API service account in Jira that will be sending webhook requests to ServiceNow. We use this to be able to deflect unecessary updates and avoid infinite loops.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_jira_spoke.api.service_account.id</name>
+        <read_roles>sn_jira_spoke.jira_admin</read_roles>
+        <suffix>api.service_account.id</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-16 08:18:12</sys_created_on>
+        <sys_id>74d66188839e8e10c54c1e60ceaad387</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>sn_jira_spoke.api.service_account.id</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_properties_74d66188839e8e10c54c1e60ceaad387</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 11:02:39</sys_updated_on>
+        <type>string</type>
+        <value>712020:3097c7f6-c8e3-425e-b7e4-b6c69c7cc2ad</value>
+        <write_roles>sn_jira_spoke.jira_admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=74d66188839e8e10c54c1e60ceaad387"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c261af0000001</claim_timestamp>
+        <metadata_update_name>sys_properties_74d66188839e8e10c54c1e60ceaad387</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>b3a8f5ae47eec6908bb7bf99516d4384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

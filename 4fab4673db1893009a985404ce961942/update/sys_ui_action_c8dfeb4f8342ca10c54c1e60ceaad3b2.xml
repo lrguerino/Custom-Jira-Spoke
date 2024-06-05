@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>send_notes_to_jira</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+    function openJiraModal() {
+
+        if (!g_form.hasField("work_notes")) {
+            getMessage("Work Note is not visible on the form", function (msg) {
+                g_form.addErrorMessage(msg);
+            });
+            return;
+        }
+
+        var missingMandatoryFields = getMissingFields();
+        if (missingMandatoryFields.length > 0) {
+            // Force ServiceNow to validate the mandatory fields with warning messages
+            g_form.save();
+            return;
+        }
+
+        var url = "/sn_jira_spoke_modal_notes.do?sysparm_stack=no&sysparm_workspace=" + true;
+        g_modal.showFrame({
+            title: g_scratchpad.jiraSettings.titleNotesModal,
+            url: url,
+            size: "lg",
+            autoCloseOn: "URL_CHANGED",
+            callback: function (ret, data) {
+                if (ret && data) {
+                    g_form.setValue("work_notes", data.workNotes);
+                    g_form.submit("send_notes_to_jira");
+                }
+            }
+        });
+    }
+
+    function getMissingFields() {
+        var fieldList = g_form.getFieldNames();
+        //return only mandatory fields that have no value
+        return fieldList.filter(function (field) {
+            if (g_form.isMandatory(field)) {
+                return !g_form.getValue(field);
+            }
+        });
+    }
+
+    openJiraModal();
+}]]></client_script_v2>
+        <comments>A popup modal will appear displaying a work note input to be sent to Jira</comments>
+        <condition>new JiraCustomUtils().isEligibleForUpdatingIssue(current);</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Send Notes To Jira</name>
+        <onclick>openModalNotes()</onclick>
+        <order>100</order>
+        <script><![CDATA[function openModalNotes() {
+
+    if (!g_form.mandatoryCheck()) {
+        return;
+    }
+
+    if (!g_form.hasField("work_notes")) {
+        getMessage("Work Note is not visible on the form", function (msg) {
+            g_form.addErrorMessage(msg);
+        });
+        return;
+    }
+
+    var dialog = new GlideModal("sn_jira_spoke_modal_notes", false, 651, 250);
+    dialog.setTitle(g_scratchpad.jiraSettings.titleNotesModal);
+
+    ScriptLoader.getScripts("/scripts/incident/glide_modal_accessibility.js", function () {
+        dialog.template = glideModalTemplate;
+        dialog.on("bodyrendered", function (event) {
+            glideModalKeyDownHandler(event, dialog.getID());
+        });
+        dialog.setPreference("WORK_NOTES", g_form.getValue("work_notes"));
+        dialog.setPreference("focusTrap", true);
+        dialog.render();
+    });
+    //This dialog will be destroyed in UI Page "sn_jira_spoke_modal_notes"
+}
+
+if (typeof window == "undefined") {
+    sendToJira();
+}
+
+function sendToJira() {
+    current.update();
+    sn_fd.FlowAPI.getRunner().subflow(
+        JiraCustomUtils.SUBFLOWS.ADD_NOTE
+    ).inBackground().withInputs({
+        task_record: current
+    }).run();
+    action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-13 15:43:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8dfeb4f8342ca10c54c1e60ceaad3b2</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Send Notes To Jira</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ui_action_c8dfeb4f8342ca10c54c1e60ceaad3b2</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-31 12:21:52</sys_updated_on>
+        <table>task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262a80000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_c8dfeb4f8342ca10c54c1e60ceaad3b2</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>bba8f5ae47eec6908bb7bf99516d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

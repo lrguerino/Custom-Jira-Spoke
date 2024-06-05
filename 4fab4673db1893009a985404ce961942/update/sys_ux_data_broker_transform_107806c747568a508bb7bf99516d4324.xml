@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>sn_jira_spoke.Jira Actions</api_name>
+        <description>Jira actions used to control the integration buttons "Create Issue" and "Add Note".</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Jira Actions</name>
+        <output_schema>{&#13;
+"canCreate": "boolean",&#13;
+"canAddNotes": "boolean"&#13;
+}</output_schema>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+    "name": "taskTable",&#13;
+    "label": "Task Table",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "string",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "Please specify the task table"&#13;
+  },&#13;
+  {&#13;
+    "name": "taskID",&#13;
+    "label": "Task ID",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "string",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "Please specify the task sys_id"&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Please specify the task sys_id",
+  "comment" : ""
+}, {
+  "message" : "Please specify the task table",
+  "comment" : ""
+}, {
+  "message" : "Task ID",
+  "comment" : ""
+}, {
+  "message" : "Task Table",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var response = {
+		canCreate: false,
+		canAddNotes: false
+	};
+	var table = input.taskTable;
+	if (gs.nil(table)) {
+		table = JiraCustomUtils.TABLES.TASK;
+	}
+	if (gs.nil(input.taskID)) {
+		return response;
+	}
+	var task = new GlideRecord(table);
+	if (!task.get(input.taskID)) {
+		return response;
+	}
+	var utils = new JiraCustomUtils();
+	response.canCreate = utils.isEligibleForCreatingIssue(task);
+	response.canAddNotes = utils.isEligibleForUpdatingIssue(task);
+	return response;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-25 18:28:30</sys_created_on>
+        <sys_id>107806c747568a508bb7bf99516d4324</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Jira Actions</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_107806c747568a508bb7bf99516d4324</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 06:45:26</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=107806c747568a508bb7bf99516d4324"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260350000001</claim_timestamp>
+        <metadata_update_name>sys_ux_data_broker_transform_107806c747568a508bb7bf99516d4324</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>67a8f5ae47eec6908bb7bf99516d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f201f09047ae8e508bb7bf99516d43c7" label="Jira Integration Trigger" max_length="40" name="sn_jira_spoke_integration_trigger" type="collection">
+        <element attributes="show_condition_count=true" dependent="u_table" dependent_on_field="u_table" label="Update Issue Condition" mandatory="true" max_length="4000" name="u_update_issue_condition" type="conditions" use_dependent_field="true"/>
+        <element attributes="show_condition_count=true" dependent="u_table" dependent_on_field="u_table" label="Create Issue Condition" mandatory="true" max_length="4000" name="u_create_issue_condition" type="conditions" use_dependent_field="true"/>
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element display="true" label="Table" mandatory="true" max_length="80" name="u_table" type="table_name" unique="true"/>
+        <index name="index" unique="true">
+            <element name="u_table"/>
+        </index>
+    </element>
+</database>

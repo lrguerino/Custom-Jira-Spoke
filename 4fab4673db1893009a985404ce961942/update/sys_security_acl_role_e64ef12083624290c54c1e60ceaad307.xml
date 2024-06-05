@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-30 09:33:23</sys_created_on>
+        <sys_id>e64ef12083624290c54c1e60ceaad307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JiraCustomAJAX.sn_customerservice_agent</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_security_acl display_value="JiraCustomAJAX">6e4eb12083624290c54c1e60ceaad3ff</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e64ef12083624290c54c1e60ceaad307</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 09:33:23</sys_updated_on>
+        <sys_user_role display_value="sn_customerservice_agent" name="sn_customerservice_agent">3120f52cc312310015519f2974d3ae83</sys_user_role>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c263590000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_e64ef12083624290c54c1e60ceaad307</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>7fa8f5ae47eec6908bb7bf99516d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

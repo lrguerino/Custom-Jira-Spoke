@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on sn_jira_spoke_jira_integration_trigger</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>sn_jira_spoke_jira_integration_trigger</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 08:56:54</sys_created_on>
+        <sys_id>28c223b7475a4e508bb7bf99516d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_jira_spoke_jira_integration_trigger</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_security_acl_28c223b7475a4e508bb7bf99516d43cd</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 08:56:54</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_security_acl_28c223b7475a4e508bb7bf99516d43cd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on sn_jira_spoke_jira_integration_trigger</description><local_or_existing>Local</local_or_existing><name>sn_jira_spoke_jira_integration_trigger</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-28 08:56:54</sys_created_on><sys_id>28c223b7475a4e508bb7bf99516d43cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_jira_spoke_jira_integration_trigger</sys_name><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_update_name>sys_security_acl_28c223b7475a4e508bb7bf99516d43cd</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-28 08:56:54</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>644288561</payload_hash>
+        <record_name>sn_jira_spoke_jira_integration_trigger</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 08:56:54</sys_created_on>
+        <sys_id>acc223b7475a4e508bb7bf99516d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fbe6ab0c70000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 08:56:54</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>e8c223b7af5a4e507c01b8f5aaa7add3</update_guid>
+        <update_guid_history>e8c223b7af5a4e507c01b8f5aaa7add3:644288561</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:26:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>34d1b824af37476c923f5c6077c573d1</sys_id>
+        <sys_metadata>28c223b7475a4e508bb7bf99516d43cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_jira_spoke_jira_integration_trigger</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent display_value="">fcc263b7475a4e508bb7bf99516d4305</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_28c223b7475a4e508bb7bf99516d43cd</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_28c223b7475a4e508bb7bf99516d43cd">acc223b7475a4e508bb7bf99516d43e0</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:26:08</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c25f6b0000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_28c223b7475a4e508bb7bf99516d43cd</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>efa8f5ae47eec6908bb7bf99516d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

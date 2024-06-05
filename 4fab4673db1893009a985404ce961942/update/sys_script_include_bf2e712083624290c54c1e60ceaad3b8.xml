@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_jira_spoke.JiraCustomAJAX</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script include is responsible for any logic that needs to be built on the client.</description>
+        <name>JiraCustomAJAX</name>
+        <script><![CDATA[var JiraCustomAJAX = Class.create();
+JiraCustomAJAX.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	/**
+	  Params : sysparm_project_id (string) - Jira Project ID
+	  Functionality : List pf issue types for a given project
+	  Used inside UI Page modal_initial
+	  Return : Javascript Array Object [{label: "", value:""}]
+	*/
+	getIssueTypesByProjectID: function () {
+		var result = [];
+		var projectID = this.getParameter("sysparm_project_id");
+		if (gs.nil(projectID)) {
+			return JSON.stringify(result);
+		}
+		var issueType = new GlideRecord(JiraCustomUtils.TABLES.CHOICE);
+		issueType.addQuery("element", "u_jira_issue_type");
+		issueType.addQuery("name", JiraCustomUtils.TABLES.TASK);
+		issueType.addQuery("inactive", false);
+		issueType.addQuery("dependent_value", projectID);
+		issueType.orderBy("order");
+		issueType.query();
+		while (issueType.next()) {
+			result.push({
+				label: issueType.getValue("label"),
+				value: issueType.getValue("value")
+			});
+		}
+		return JSON.stringify(result);
+	},
+
+    type: "JiraCustomAJAX"
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-30 09:33:22</sys_created_on>
+        <sys_id>bf2e712083624290c54c1e60ceaad3b8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>JiraCustomAJAX</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_script_include_bf2e712083624290c54c1e60ceaad3b8</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:01:10</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262220000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_bf2e712083624290c54c1e60ceaad3b8</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>33a8f5ae47eec6908bb7bf99516d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

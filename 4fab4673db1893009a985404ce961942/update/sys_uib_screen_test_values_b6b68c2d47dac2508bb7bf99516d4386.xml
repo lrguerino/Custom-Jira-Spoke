@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+    "029f04e053610110ac9bddeeff7b1294": {
+        "forcedViewName": "",
+        "selectedTabIndex": 0,
+        "view": "workspace"
+    },
+    "a4a0fbae64611110fa9baad96557fb37": {
+        "inputRibbonLocation": "sidebar",
+        "inputSecondaryLocation": "sidebar"
+    },
+    "625bc24c43f51110772811618bb8f253": {
+        "configMapping": [
+            {
+                "agent_assist": [
+                    {
+                        "table=incident": "e15061a4b30303002bf182c136a8dc34"
+                    },
+                    {
+                        "table=sn_onboarding_case": "f878a69753b6001031cdddeeff7b12a9"
+                    },
+                    {
+                        "tableSTARTSWITHkb_template": "5cb4030e73e2330021741c86fbf6a7e1"
+                    },
+                    {
+                        "tableSTARTSWITHu_kb_template": "5cb4030e73e2330021741c86fbf6a7e1"
+                    },
+                    {
+                        "table=kb_knowledge": "5cb4030e73e2330021741c86fbf6a7e1"
+                    },
+                    {
+                        "table=kb_knowledge_block": "5cb4030e73e2330021741c86fbf6a7e1"
+                    },
+                    {
+                        "table=wm_order": "f0f4085f0f0733005cbf3694ba767e19"
+                    },
+                    {
+                        "table=wm_task": "b4654c5f0f0733005cbf3694ba767e6a"
+                    },
+                    {
+                        "table=sn_customerservice_case": "0a73bc83c3041300e2fd5cb981d3ae29"
+                    },
+                    {
+                        "table=sn_customerservice_base_case": "9695f4a347420e108bb7bf99516d4327"
+                    },
+                    {
+                        "table=sn_customerservice_ets_case": "ca67782747420e108bb7bf99516d43ee"
+                    },
+                    {
+                        "table=csm_order_case": "ea707b1487121300e2fd5171d7cb0b82"
+                    },
+                    {
+                        "table=interaction": "e48774eab3f33300acb582c136a8dcfc"
+                    }
+                ],
+                "response_template": [
+                    {
+                        "table=sn_customerservice_case": "5f0a5f7e77840010ec75945caa1061a5"
+                    },
+                    {
+                        "table=sn_customerservice_base_case": "d2a9b8e747420e108bb7bf99516d43c5"
+                    },
+                    {
+                        "table=sn_customerservice_ets_case": "5e1a742b47420e108bb7bf99516d4346"
+                    },
+                    {
+                        "table=incident": "b34869261b8021100a82da88b04bcb9f"
+                    },
+                    {
+                        "table=change_request": "2458a9261b8021100a82da88b04bcbe7"
+                    }
+                ]
+            }
+        ],
+        "sysId": null
+    },
+    "ff29f706f8266110f8779039584d84c2": {},
+    "819f84251b347910a96e76a9cc4bcbc0": {},
+    "443cfeed913d1110fa9b583f97f33b43": {
+        "setting": "contact,consumer,req_service_org,number"
+    }
+}</macroponent_config>
+        <screen display_value="Jira Task Information">b6b68c2d47dac2508bb7bf99516d4382</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 17:09:15</sys_created_on>
+        <sys_id>b6b68c2d47dac2508bb7bf99516d4386</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_b6b68c2d47dac2508bb7bf99516d4386</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-04 08:36:12</sys_updated_on>
+    </sys_uib_screen_test_values>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c2619e0000001</claim_timestamp>
+        <metadata_update_name>sys_uib_screen_test_values_b6b68c2d47dac2508bb7bf99516d4386</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>b7a8f5ae47eec6908bb7bf99516d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

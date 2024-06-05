@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_condition">
+    <sys_ux_screen_condition action="DELETE">
+        <active>true</active>
+        <conditions_params_mapping/>
+        <is_result_memoizable>false</is_result_memoizable>
+        <screen/>
+        <screen_condition/>
+        <script><![CDATA[(function showJiraInformationTab(params) {
+	
+	if (params.sysId === "-1") {
+		return false;
+	}
+
+	var utils = new JiraCustomUtils();
+	
+    if (!utils.isOutboundAPIEnabled()) {
+        return false;
+    }
+
+	if (!utils.isTableAllowed(params.table)) {
+        return false;
+    }
+
+	return true;
+
+})(inputProperties);]]></script>
+        <scripted_condition>true</scripted_condition>
+        <sys_class_name>sys_ux_screen_condition</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 15:51:48</sys_created_on>
+        <sys_id>77280e0247d686508bb7bf99516d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 15:51:48</sys_updated_on>
+    </sys_ux_screen_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_screen_condition"&gt;&lt;sys_ux_screen_condition action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions_params_mapping/&gt;&lt;is_result_memoizable&gt;false&lt;/is_result_memoizable&gt;&lt;screen/&gt;&lt;screen_condition/&gt;&lt;script&gt;&lt;![CDATA[(function showJiraInformationTab(params) {
+	
+	if (params.sysId === "-1") {
+		return false;
+	}
+
+	var utils = new JiraCustomUtils();
+	
+    if (!utils.isOutboundAPIEnabled()) {
+        return false;
+    }
+
+	if (!utils.isTableAllowed(params.table)) {
+        return false;
+    }
+
+	return true;
+
+})(inputProperties);]]&gt;&lt;/script&gt;&lt;scripted_condition&gt;true&lt;/scripted_condition&gt;&lt;sys_class_name&gt;sys_ux_screen_condition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-22 15:51:48&lt;/sys_created_on&gt;&lt;sys_id&gt;77280e0247d686508bb7bf99516d4355&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-22 15:51:48&lt;/sys_updated_on&gt;&lt;/sys_ux_screen_condition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>814383949</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 15:57:21</sys_created_on>
+        <sys_id>c5794e4247d686508bb7bf99516d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa10578c00000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 15:57:21</sys_updated_on>
+        <type>UX Screen Condition</type>
+        <update_guid>77280e022cd68650ea8fe21c70c0d357</update_guid>
+        <update_guid_history>77280e022cd68650ea8fe21c70c0d357:1186757829,77280e022cd68650ea8fe21c70c0d357:1186757829</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 18:40:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_condition">sys_ux_screen_condition</sys_db_object>
+        <sys_id>30948e83b2ad4a1895fb00e86eeb9840</sys_id>
+        <sys_metadata>77280e0247d686508bb7bf99516d4355</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355">c5794e4247d686508bb7bf99516d43e8</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 18:40:25</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260780000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_condition_77280e0247d686508bb7bf99516d4355</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>67a8f5ae47eec6908bb7bf99516d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

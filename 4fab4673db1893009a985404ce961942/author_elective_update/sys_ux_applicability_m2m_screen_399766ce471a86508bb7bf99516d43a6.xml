@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="DELETE">
+        <active>true</active>
+        <applicability display_value="CSM - Agent">d471cdf2530020102c30ddeeff7b1206</applicability>
+        <order>0</order>
+        <screen display_value="Jira Information CSM">a59766ce471a86508bb7bf99516d439f</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 18:09:00</sys_created_on>
+        <sys_id>399766ce471a86508bb7bf99516d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 18:09:00</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen"><sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="CSM - Agent">d471cdf2530020102c30ddeeff7b1206</applicability><order>0</order><screen display_value="Jira Information CSM">a59766ce471a86508bb7bf99516d439f</screen><sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-22 18:09:00</sys_created_on><sys_id>399766ce471a86508bb7bf99516d43a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_update_name>sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-22 18:09:00</sys_updated_on></sys_ux_applicability_m2m_screen></record_update>]]></payload>
+        <payload_hash>2140076238</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 18:09:00</sys_created_on>
+        <sys_id>f59766ce471a86508bb7bf99516d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa17e013c0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 18:09:00</sys_updated_on>
+        <type>Screen Applicability</type>
+        <update_guid>f99766ce6f1a86500396a1622cf125a7</update_guid>
+        <update_guid_history>f99766ce6f1a86500396a1622cf125a7:2140076238</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 18:16:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_screen">sys_ux_applicability_m2m_screen</sys_db_object>
+        <sys_id>526976ed32a64ccfac7763d8991c6691</sys_id>
+        <sys_metadata>399766ce471a86508bb7bf99516d43a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6">f59766ce471a86508bb7bf99516d43a8</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 18:16:29</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c263760000001</claim_timestamp>
+        <metadata_update_name>sys_ux_applicability_m2m_screen_399766ce471a86508bb7bf99516d43a6</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>bba8f5ae47eec6908bb7bf99516d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Jira Information CSM</name>
+        <optional_parameters/>
+        <order>1000</order>
+        <parent_macroponent display_value="Record">558adc930f0210107d20409dc4767e84</parent_macroponent>
+        <parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id>
+        <route_type>jira-information-case</route_type>
+        <screen_type display_value="Jira Information">f2b68ce947dac2508bb7bf99516d434a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 07:21:34</sys_created_on>
+        <sys_id>307cd5164716c6508bb7bf99516d437e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Jira Information CSM</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_app_route_307cd5164716c6508bb7bf99516d437e</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 07:25:41</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=307cd5164716c6508bb7bf99516d437e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_app_route_307cd5164716c6508bb7bf99516d437e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config><description/><extension_point/><fields/><icon/><name>Jira Information CSM</name><optional_parameters/><order>1000</order><parent_macroponent display_value="Record">558adc930f0210107d20409dc4767e84</parent_macroponent><parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id><route_type>jira-information-case</route_type><screen_type display_value="Jira Information">f2b68ce947dac2508bb7bf99516d434a</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-23 07:21:34</sys_created_on><sys_id>307cd5164716c6508bb7bf99516d437e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Jira Information CSM</sys_name><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_update_name>sys_ux_app_route_307cd5164716c6508bb7bf99516d437e</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-23 07:25:41</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=307cd5164716c6508bb7bf99516d437e"/></record_update>]]></payload>
+        <payload_hash>-1333659579</payload_hash>
+        <record_name>Jira Information CSM</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 07:25:41</sys_created_on>
+        <sys_id>bfed15964716c6508bb7bf99516d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa457636c0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 07:25:41</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>33ed15964c16c650245e46cfdc83fcaf</update_guid>
+        <update_guid_history>33ed15964c16c650245e46cfdc83fcaf:-1333659579,6a3d55565d16c65021288bfebb8dd3c7:327866940,63fc15161c16c650559a5752a659d6d3:-476482815</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 07:26:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>3aa0a45a46d749e8b8496b0d7ca2de40</sys_id>
+        <sys_metadata>307cd5164716c6508bb7bf99516d437e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira Information CSM</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_307cd5164716c6508bb7bf99516d437e</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_307cd5164716c6508bb7bf99516d437e">bfed15964716c6508bb7bf99516d43af</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 07:26:09</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262ad0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_app_route_307cd5164716c6508bb7bf99516d437e</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>77a8f5ae47eec6908bb7bf99516d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

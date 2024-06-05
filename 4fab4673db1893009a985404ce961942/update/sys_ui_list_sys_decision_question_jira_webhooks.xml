@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_decision_question" version="2" view="jira_webhooks">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>order</element>
+            <list_id display_value="sys_decision_question" element="NULL" name="sys_decision_question" parent="NULL" relationship="NULL" sys_domain="global" view="5210cde3875f7300c1e95773e8cb0b8b">d479e94c839e8e10c54c1e60ceaad3f8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:39</sys_created_on>
+            <sys_id>1879e94c839e8e10c54c1e60ceaad3f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>label</element>
+            <list_id display_value="sys_decision_question" element="NULL" name="sys_decision_question" parent="NULL" relationship="NULL" sys_domain="global" view="5210cde3875f7300c1e95773e8cb0b8b">d479e94c839e8e10c54c1e60ceaad3f8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:39</sys_created_on>
+            <sys_id>1079e94c839e8e10c54c1e60ceaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>answer</element>
+            <list_id display_value="sys_decision_question" element="NULL" name="sys_decision_question" parent="NULL" relationship="NULL" sys_domain="global" view="5210cde3875f7300c1e95773e8cb0b8b">d479e94c839e8e10c54c1e60ceaad3f8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:39</sys_created_on>
+            <sys_id>1479e94c839e8e10c54c1e60ceaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>condition</element>
+            <list_id display_value="sys_decision_question" element="NULL" name="sys_decision_question" parent="NULL" relationship="NULL" sys_domain="global" view="5210cde3875f7300c1e95773e8cb0b8b">d479e94c839e8e10c54c1e60ceaad3f8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:39</sys_created_on>
+            <sys_id>1879e94c839e8e10c54c1e60ceaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_decision_question" element="NULL" name="sys_decision_question" parent="NULL" relationship="NULL" sys_domain="global" view="5210cde3875f7300c1e95773e8cb0b8b">d479e94c839e8e10c54c1e60ceaad3f8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:39</sys_created_on>
+            <sys_id>1c79e94c839e8e10c54c1e60ceaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_decision_question</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-05-16 08:29:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d479e94c839e8e10c54c1e60ceaad3f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_decision_question</sys_name>
+            <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+            <sys_update_name>sys_ui_list_sys_decision_question_jira_webhooks</sys_update_name>
+            <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-05-16 08:29:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Jira Webhooks" name="jira_webhooks">5210cde3875f7300c1e95773e8cb0b8b</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260b90000001</claim_timestamp>
+        <metadata_update_name>sys_ui_list_sys_decision_question_jira_webhooks</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>aba8f5ae47eec6908bb7bf99516d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

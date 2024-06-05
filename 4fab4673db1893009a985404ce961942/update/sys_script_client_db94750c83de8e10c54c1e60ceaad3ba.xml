@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_jira_ebonding_status</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Jira Section UI</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+    g_form.setSectionDisplay("jira_information", false);
+
+    if (g_form.isNewRecord()) {
+        return;
+    }
+
+    // If user is not part of the ETS team, we don't show Jira section
+    if (!g_user.hasRole("sn_customerservice_agent", true)) {
+        return;
+    }
+
+    // If server scrachpad not defined, then we don't show Jira section
+    if (!g_scratchpad.hasOwnProperty("jiraSettings")) {
+        return;
+    }
+
+    // We finally know SN and Jira are now bonded, we show the Jira section
+    g_form.setSectionDisplay("jira_information", true);
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-16 09:30:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db94750c83de8e10c54c1e60ceaad3ba</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>Hide Jira Section UI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_script_client_db94750c83de8e10c54c1e60ceaad3ba</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 15:54:52</sys_updated_on>
+        <table>task</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c261060000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_db94750c83de8e10c54c1e60ceaad3ba</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>2fa8f5ae47eec6908bb7bf99516d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

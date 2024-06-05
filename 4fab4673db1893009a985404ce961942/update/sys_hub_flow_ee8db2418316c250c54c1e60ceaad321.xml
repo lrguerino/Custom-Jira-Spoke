@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=773405000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Issue Management">3f5d8d4edbe897005963ff041d9619d2</category>
+        <copied_from>d844d83b83864e10c54c1e60ceaad354</copied_from>
+        <copied_from_name>Create Jira Issue From Task</copied_from_name>
+        <description/>
+        <internal_name>update_jira_issue_from_task</internal_name>
+        <label_cache>[{"name":"subflow.task_record.u_jira_id","label":"Input➛Task Record➛Jira ID","reference":"","reference_display":"Jira ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"u_jira_id"},{"name":"flow_variable.sn_custom_field_id","label":"Flow Variables➛SN Custom Field ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8db65a94-708b-4224-ba3a-6fe5678775ca"}},{"name":"flow_variable.description","label":"Flow Variables➛Description","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ba159ea4-39f8-4f22-b522-3f648b818d53"}},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"subflow.task_record.u_jira_issue_type","label":"Input➛Task Record➛Jira Issue Type","reference":"","reference_display":"Jira Issue Type","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"u_jira_issue_type","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Access Request","used":false,"rawLabel":"Access Request","selected":false,"missing":false,"reference":false,"value":"10403","parameters":{"name":"task"}},{"image":"","label":"Epic","used":false,"rawLabel":"Epic","selected":false,"missing":false,"reference":false,"value":"10002","parameters":{"name":"task"}},{"image":"","label":"Application Maintenance Request","used":false,"rawLabel":"Application Maintenance Request","selected":false,"missing":false,"reference":false,"value":"10404","parameters":{"name":"task"}},{"image":"","label":"Decommission Request","used":false,"rawLabel":"Decommission Request","selected":false,"missing":false,"reference":false,"value":"10405","parameters":{"name":"task"}},{"image":"","label":"Deployment Request","used":false,"rawLabel":"Deployment Request","selected":false,"missing":false,"reference":false,"value":"10406","parameters":{"name":"task"}},{"image":"","label":"Database Refresh Request","used":false,"rawLabel":"Database Refresh Request","selected":false,"missing":false,"reference":false,"value":"10407","parameters":{"name":"task"}}]},{"name":"subflow.task_record.u_jira_project","label":"Input➛Task Record➛Jira Project","reference":"","reference_display":"Jira Project","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"u_jira_project","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Technical Services Service Catalog","used":false,"rawLabel":"Technical Services Service Catalog","selected":false,"missing":false,"reference":false,"value":"10803","parameters":{"name":"task"}},{"image":"","label":"My Kanban Project","used":false,"rawLabel":"My Kanban Project","selected":false,"missing":false,"reference":false,"value":"10000","parameters":{"name":"task"}}]},{"name":"subflow.task_record.short_description","label":"Input➛Task Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"task","column_name":"short_description"},{"name":"subflow.task_record.description","label":"Input➛Task Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"task","column_name":"description"},{"name":"flow_variable.jira_priority","label":"Flow Variables➛Jira Priority","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8b7e05ef-78c9-404d-822c-3192fff45f3d"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3166aef1-f7f9-4175-953a-c3a0a4b768d1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.jira_issue_type","label":"Flow Variables➛Jira Issue Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"88ce1a77-74fe-4647-9bb8-333e238be011"}},{"name":"flow_variable.jira_project","label":"Flow Variables➛Jira Project","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eb9cd747-b040-45f5-8039-c963012d0c68"}},{"name":"flow_variable.due_date","label":"Flow Variables➛Due Date","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b97f4d2-c53b-4a00-b823-9eb6e699cb67"}},{"name":"flow_variable.add_work_note_summary","label":"Flow Variables➛Add Work Note Summary","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"86a4d06e-9058-446a-9ba3-971c8d9ffc23"}},{"name":"subflow.task_record.priority","label":"Input➛Task Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"priority","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"P1","used":false,"rawLabel":"P1","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"P2","used":false,"rawLabel":"P2","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"P3","used":false,"rawLabel":"P3","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"P4","used":false,"rawLabel":"P4","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}},{"image":"","label":"P5","used":false,"rawLabel":"P5","selected":false,"missing":false,"reference":false,"value":"5","parameters":{"name":"task"}}]},{"name":"subflow.task_record.due_date","label":"Input➛Task Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"task","column_name":"due_date"},{"name":"bd3965a7-85df-49e7-acb4-886d0090b23e.has_error","label":"1 - Update Issue By Issue ID➛Has Error","reference_display":"Has Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b02fb986-96a0-4dc1-a987-072733d93d03"}},{"name":"bd3965a7-85df-49e7-acb4-886d0090b23e.error_message","label":"1 - Update Issue By Issue ID➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2490e614-ef67-4d88-a4cc-325aaca67879"}},{"name":"608f665f-6f3c-4fd8-97fa-7efb7a211c59.__status__.message","label":"5 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"subflow.task_record.impact","label":"Input➛Task Record➛Impact","reference":"","reference_display":"Impact","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"impact","choices":[{"image":"","label":"Organisation","used":false,"rawLabel":"Organisation","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"Department","used":false,"rawLabel":"Department","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"Team / Critical User","used":false,"rawLabel":"Team / Critical User","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"Individual","used":false,"rawLabel":"Individual","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}}]}]</label_cache>
+        <master_snapshot>13bf32058316c250c54c1e60ceaad3eb</master_snapshot>
+        <name>Update Jira Issue From Task</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee8db2418316c250c54c1e60ceaad321</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Update Jira Issue From Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_hub_flow_ee8db2418316c250c54c1e60ceaad321</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:09</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262a40000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_ee8db2418316c250c54c1e60ceaad321</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>ffa8f5ae47eec6908bb7bf99516d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ee8db2418316c250c54c1e60ceaad321^sys_idNOT IN668db2418316c250c54c1e60ceaad325"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ee8db2418316c250c54c1e60ceaad321</id>
+        <name>Update Jira Issue From Task</name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:00</sys_created_on>
+        <sys_id>668db2418316c250c54c1e60ceaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=668db2418316c250c54c1e60ceaad325"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ee8db2418316c250c54c1e60ceaad321^sys_idNOT INb68db2418316c250c54c1e60ceaad34b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3166aef1-f7f9-4175-953a-c3a0a4b768d1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Task Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</model>
+        <model_id>ee8db2418316c250c54c1e60ceaad321</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ee8db2418316c250c54c1e60ceaad321</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>b68db2418316c250c54c1e60ceaad34b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b68db2418316c250c54c1e60ceaad34b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ee8db2418316c250c54c1e60ceaad321^sys_idNOT IN5d122e194716c2508bb7bf99516d43e8,845cd2514716c2508bb7bf99516d431b,8f8db2418316c250c54c1e60ceaad383"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <order>6</order>
+        <parent_ui_id>608f665f-6f3c-4fd8-97fa-7efb7a211c59</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>5d122e194716c2508bb7bf99516d43e8</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:40:51</sys_updated_on>
+        <ui_id>8a8c874e-63e5-4581-bd6a-a62aa2f39722</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5d122e194716c2508bb7bf99516d43e8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d122e194716c2508bb7bf99516d43e8</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>dd122e194716c2508bb7bf99516d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5d122e194716c2508bb7bf99516d43e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5d122e194716c2508bb7bf99516d43e8</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>5d122e194716c2508bb7bf99516d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5d122e194716c2508bb7bf99516d43e8</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>d5122e194716c2508bb7bf99516d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5d122e194716c2508bb7bf99516d43e8</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>99122e194716c2508bb7bf99516d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>work_notes=An unexpected error has occurred while executing the subflow [Update Jira Issue From Task]. Please contact your ServiceNow administrator as soon as possibile.
+
+{{608f665f-6f3c-4fd8-97fa-7efb7a211c59.__status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5d122e194716c2508bb7bf99516d43e8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d122e194716c2508bb7bf99516d43e8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Issue By Issue ID">281c1e114716c2508bb7bf99516d43d3</action_type>
+        <action_type_parent display_value="Update Issue By Issue ID">a0fbd6114716c2508bb7bf99516d43ea</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <order>1</order>
+        <parent_ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:18</sys_created_on>
+        <sys_id>845cd2514716c2508bb7bf99516d431b</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:40:51</sys_updated_on>
+        <ui_id>bd3965a7-85df-49e7-acb4-886d0090b23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=845cd2514716c2508bb7bf99516d431b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>845cd2514716c2508bb7bf99516d431b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:18</sys_created_on>
+        <sys_id>005cd2514716c2508bb7bf99516d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">b01c1e114716c2508bb7bf99516d43e4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>845cd2514716c2508bb7bf99516d431b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 16:01:05</sys_created_on>
+        <sys_id>d6d3490c47ee4e508bb7bf99516d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:05</sys_updated_on>
+        <value/>
+        <variable display_value="Severity">d8c3050c47ee4e508bb7bf99516d43f9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=845cd2514716c2508bb7bf99516d431b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>845cd2514716c2508bb7bf99516d431b</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:18</sys_created_on>
+        <sys_id>085cd2514716c2508bb7bf99516d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>issue_id</field>
+        <id>845cd2514716c2508bb7bf99516d431b</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:18</sys_created_on>
+        <sys_id>c85cd2514716c2508bb7bf99516d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.u_jira_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>priority</field>
+        <id>845cd2514716c2508bb7bf99516d431b</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:18</sys_created_on>
+        <sys_id>8c5cd2514716c2508bb7bf99516d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.priority}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>severity</field>
+        <id>845cd2514716c2508bb7bf99516d431b</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 16:01:05</sys_created_on>
+        <sys_id>56d3490c47ee4e508bb7bf99516d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.impact}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=845cd2514716c2508bb7bf99516d431b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=845cd2514716c2508bb7bf99516d431b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <order>3</order>
+        <parent_ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>8f8db2418316c250c54c1e60ceaad383</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-05-30 12:40:51</sys_updated_on>
+        <ui_id>df5d7679-0ab8-4509-9200-807e4dc67961</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f8db2418316c250c54c1e60ceaad383"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8f8db2418316c250c54c1e60ceaad383</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>cb8db2418316c250c54c1e60ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:01</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f8db2418316c250c54c1e60ceaad383"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8f8db2418316c250c54c1e60ceaad383</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>4b8db2418316c250c54c1e60ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8f8db2418316c250c54c1e60ceaad383</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>c38db2418316c250c54c1e60ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8f8db2418316c250c54c1e60ceaad383</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>878db2418316c250c54c1e60ceaad385</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>work_notes=The Jira Cloud Platform has returned the following error:
+{{bd3965a7-85df-49e7-acb4-886d0090b23e.error_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f8db2418316c250c54c1e60ceaad383"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f8db2418316c250c54c1e60ceaad383"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ee8db2418316c250c54c1e60ceaad321^sys_idNOT IN19122e194716c2508bb7bf99516d43e0,368db2418316c250c54c1e60ceaad366,5d122e194716c2508bb7bf99516d43b2,728db2418316c250c54c1e60ceaad362"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51122e194716c2508bb7bf99516d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>19122e194716c2508bb7bf99516d43e0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:09</sys_updated_on>
+        <ui_id>608f665f-6f3c-4fd8-97fa-7efb7a211c59</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=19122e194716c2508bb7bf99516d43e0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>19122e194716c2508bb7bf99516d43e0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>55122e194716c2508bb7bf99516d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>19122e194716c2508bb7bf99516d43e0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>5d122e194716c2508bb7bf99516d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:30</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=19122e194716c2508bb7bf99516d43e0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=19122e194716c2508bb7bf99516d43e0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=19122e194716c2508bb7bf99516d43e0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">818610fb83864e10c54c1e60ceaad3c6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>368db2418316c250c54c1e60ceaad366</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:09</sys_updated_on>
+        <ui_id>87640778-2654-4e61-af2b-e854c29cb6b2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=368db2418316c250c54c1e60ceaad366"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=368db2418316c250c54c1e60ceaad366"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=368db2418316c250c54c1e60ceaad366"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51122e194716c2508bb7bf99516d43b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:30</sys_created_on>
+        <sys_id>5d122e194716c2508bb7bf99516d43b2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:09</sys_updated_on>
+        <ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5d122e194716c2508bb7bf99516d43b2"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5d122e194716c2508bb7bf99516d43b2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5d122e194716c2508bb7bf99516d43b2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">018610fb83864e10c54c1e60ceaad3bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>728db2418316c250c54c1e60ceaad362</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:09</sys_updated_on>
+        <ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=728db2418316c250c54c1e60ceaad362"/>
+    <sys_element_mapping action="delete_multiple" query="id=728db2418316c250c54c1e60ceaad362"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>728db2418316c250c54c1e60ceaad362</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>f28db2418316c250c54c1e60ceaad365</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{bd3965a7-85df-49e7-acb4-886d0090b23e.has_error}}=true</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=728db2418316c250c54c1e60ceaad362"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=728db2418316c250c54c1e60ceaad362"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ee8db2418316c250c54c1e60ceaad321^sys_idNOT INb28db2418316c250c54c1e60ceaad350"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_record</element>
+        <help/>
+        <hint/>
+        <label>Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ee8db2418316c250c54c1e60ceaad321</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:11:01</sys_created_on>
+        <sys_id>b28db2418316c250c54c1e60ceaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:11:01</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=205774000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Issue Management">3f5d8d4edbe897005963ff041d9619d2</category>
+        <copied_from>d844d83b83864e10c54c1e60ceaad354</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>update_jira_issue_from_task</internal_name>
+        <label_cache>[{"name":"subflow.task_record.u_jira_id","label":"Input➛Task Record➛Jira ID","reference":"","reference_display":"Jira ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"u_jira_id"},{"name":"flow_variable.sn_custom_field_id","label":"Flow Variables➛SN Custom Field ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8db65a94-708b-4224-ba3a-6fe5678775ca"}},{"name":"flow_variable.description","label":"Flow Variables➛Description","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ba159ea4-39f8-4f22-b522-3f648b818d53"}},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"subflow.task_record.u_jira_issue_type","label":"Input➛Task Record➛Jira Issue Type","reference":"","reference_display":"Jira Issue Type","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"u_jira_issue_type","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Access Request","used":false,"rawLabel":"Access Request","selected":false,"missing":false,"reference":false,"value":"10403","parameters":{"name":"task"}},{"image":"","label":"Epic","used":false,"rawLabel":"Epic","selected":false,"missing":false,"reference":false,"value":"10002","parameters":{"name":"task"}},{"image":"","label":"Application Maintenance Request","used":false,"rawLabel":"Application Maintenance Request","selected":false,"missing":false,"reference":false,"value":"10404","parameters":{"name":"task"}},{"image":"","label":"Decommission Request","used":false,"rawLabel":"Decommission Request","selected":false,"missing":false,"reference":false,"value":"10405","parameters":{"name":"task"}},{"image":"","label":"Deployment Request","used":false,"rawLabel":"Deployment Request","selected":false,"missing":false,"reference":false,"value":"10406","parameters":{"name":"task"}},{"image":"","label":"Database Refresh Request","used":false,"rawLabel":"Database Refresh Request","selected":false,"missing":false,"reference":false,"value":"10407","parameters":{"name":"task"}}]},{"name":"subflow.task_record.u_jira_project","label":"Input➛Task Record➛Jira Project","reference":"","reference_display":"Jira Project","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"u_jira_project","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Technical Services Service Catalog","used":false,"rawLabel":"Technical Services Service Catalog","selected":false,"missing":false,"reference":false,"value":"10803","parameters":{"name":"task"}},{"image":"","label":"My Kanban Project","used":false,"rawLabel":"My Kanban Project","selected":false,"missing":false,"reference":false,"value":"10000","parameters":{"name":"task"}}]},{"name":"subflow.task_record.short_description","label":"Input➛Task Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"task","column_name":"short_description"},{"name":"subflow.task_record.description","label":"Input➛Task Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"task","column_name":"description"},{"name":"flow_variable.jira_priority","label":"Flow Variables➛Jira Priority","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8b7e05ef-78c9-404d-822c-3192fff45f3d"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3166aef1-f7f9-4175-953a-c3a0a4b768d1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.jira_issue_type","label":"Flow Variables➛Jira Issue Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"88ce1a77-74fe-4647-9bb8-333e238be011"}},{"name":"flow_variable.jira_project","label":"Flow Variables➛Jira Project","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eb9cd747-b040-45f5-8039-c963012d0c68"}},{"name":"flow_variable.due_date","label":"Flow Variables➛Due Date","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b97f4d2-c53b-4a00-b823-9eb6e699cb67"}},{"name":"flow_variable.add_work_note_summary","label":"Flow Variables➛Add Work Note Summary","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"86a4d06e-9058-446a-9ba3-971c8d9ffc23"}},{"name":"subflow.task_record.priority","label":"Input➛Task Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"priority","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"P1","used":false,"rawLabel":"P1","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"P2","used":false,"rawLabel":"P2","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"P3","used":false,"rawLabel":"P3","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"P4","used":false,"rawLabel":"P4","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}},{"image":"","label":"P5","used":false,"rawLabel":"P5","selected":false,"missing":false,"reference":false,"value":"5","parameters":{"name":"task"}}]},{"name":"subflow.task_record.due_date","label":"Input➛Task Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"task","column_name":"due_date"},{"name":"bd3965a7-85df-49e7-acb4-886d0090b23e.has_error","label":"1 - Update Issue By Issue ID➛Has Error","reference_display":"Has Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b02fb986-96a0-4dc1-a987-072733d93d03"}},{"name":"bd3965a7-85df-49e7-acb4-886d0090b23e.error_message","label":"1 - Update Issue By Issue ID➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2490e614-ef67-4d88-a4cc-325aaca67879"}},{"name":"608f665f-6f3c-4fd8-97fa-7efb7a211c59.__status__.message","label":"5 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"subflow.task_record.impact","label":"Input➛Task Record➛Impact","reference":"","reference_display":"Impact","type":"choice","base_type":"choice","parent_table_name":"task","column_name":"impact","choices":[{"image":"","label":"Organisation","used":false,"rawLabel":"Organisation","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"Department","used":false,"rawLabel":"Department","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"Team / Critical User","used":false,"rawLabel":"Team / Critical User","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"Individual","used":false,"rawLabel":"Individual","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}}]}]</label_cache>
+        <master>true</master>
+        <name>Update Jira Issue From Task</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13bf32058316c250c54c1e60ceaad3eb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=13bf32058316c250c54c1e60ceaad3eb^sys_idNOT IN97bf32058316c250c54c1e60ceaad3ec"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>13bf32058316c250c54c1e60ceaad3eb</id>
+        <name>Update Jira Issue From Task</name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>97bf32058316c250c54c1e60ceaad3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=97bf32058316c250c54c1e60ceaad3ec"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=13bf32058316c250c54c1e60ceaad3eb^sys_idNOT IN13bf32058316c250c54c1e60ceaad3ee"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3166aef1-f7f9-4175-953a-c3a0a4b768d1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Task Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</model>
+        <model_id>13bf32058316c250c54c1e60ceaad3eb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_13bf32058316c250c54c1e60ceaad3eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>13bf32058316c250c54c1e60ceaad3ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=13bf32058316c250c54c1e60ceaad3ee"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=13bf32058316c250c54c1e60ceaad3eb^sys_idNOT IN5bbf72058316c250c54c1e60ceaad346,785c16514716c2508bb7bf99516d4378,bd126e194716c2508bb7bf99516d43cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <order>3</order>
+        <parent_ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>5bbf72058316c250c54c1e60ceaad346</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>df5d7679-0ab8-4509-9200-807e4dc67961</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5bbf72058316c250c54c1e60ceaad346"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5bbf72058316c250c54c1e60ceaad346</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>93bf72058316c250c54c1e60ceaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5bbf72058316c250c54c1e60ceaad346"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5bbf72058316c250c54c1e60ceaad346</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>13bf72058316c250c54c1e60ceaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5bbf72058316c250c54c1e60ceaad346</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>9bbf72058316c250c54c1e60ceaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5bbf72058316c250c54c1e60ceaad346</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>5fbf72058316c250c54c1e60ceaad347</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>work_notes=The Jira Cloud Platform has returned the following error:
+{{bd3965a7-85df-49e7-acb4-886d0090b23e.error_message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bbf72058316c250c54c1e60ceaad346"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5bbf72058316c250c54c1e60ceaad346"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Issue By Issue ID">281c1e114716c2508bb7bf99516d43d3</action_type>
+        <action_type_parent display_value="Update Issue By Issue ID">a0fbd6114716c2508bb7bf99516d43ea</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <order>1</order>
+        <parent_ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:21</sys_created_on>
+        <sys_id>785c16514716c2508bb7bf99516d4378</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>bd3965a7-85df-49e7-acb4-886d0090b23e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=785c16514716c2508bb7bf99516d4378"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>785c16514716c2508bb7bf99516d4378</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 16:01:07</sys_created_on>
+        <sys_id>76d3890c47ee4e508bb7bf99516d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <value/>
+        <variable display_value="Severity">d8c3050c47ee4e508bb7bf99516d43f9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>785c16514716c2508bb7bf99516d4378</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:21</sys_created_on>
+        <sys_id>b05c16514716c2508bb7bf99516d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">b01c1e114716c2508bb7bf99516d43e4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=785c16514716c2508bb7bf99516d4378"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>785c16514716c2508bb7bf99516d4378</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:21</sys_created_on>
+        <sys_id>b85c16514716c2508bb7bf99516d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>issue_id</field>
+        <id>785c16514716c2508bb7bf99516d4378</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:21</sys_created_on>
+        <sys_id>7c5c16514716c2508bb7bf99516d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.u_jira_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>priority</field>
+        <id>785c16514716c2508bb7bf99516d4378</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:24:21</sys_created_on>
+        <sys_id>305c16514716c2508bb7bf99516d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.priority}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>severity</field>
+        <id>785c16514716c2508bb7bf99516d4378</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 16:01:07</sys_created_on>
+        <sys_id>f2d3890c47ee4e508bb7bf99516d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_281c1e114716c2508bb7bf99516d43d3</table>
+        <value>{{subflow.task_record.impact}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=785c16514716c2508bb7bf99516d4378"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=785c16514716c2508bb7bf99516d4378"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <order>6</order>
+        <parent_ui_id>608f665f-6f3c-4fd8-97fa-7efb7a211c59</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>bd126e194716c2508bb7bf99516d43cb</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>8a8c874e-63e5-4581-bd6a-a62aa2f39722</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bd126e194716c2508bb7bf99516d43cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bd126e194716c2508bb7bf99516d43cb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>f5126e194716c2508bb7bf99516d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <value>task</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bd126e194716c2508bb7bf99516d43cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bd126e194716c2508bb7bf99516d43cb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>75126e194716c2508bb7bf99516d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{subflow.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bd126e194716c2508bb7bf99516d43cb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>fd126e194716c2508bb7bf99516d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bd126e194716c2508bb7bf99516d43cb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>b1126e194716c2508bb7bf99516d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>work_notes=An unexpected error has occurred while executing the subflow [Update Jira Issue From Task]. Please contact your ServiceNow administrator as soon as possibile.
+
+{{608f665f-6f3c-4fd8-97fa-7efb7a211c59.__status__.message}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bd126e194716c2508bb7bf99516d43cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd126e194716c2508bb7bf99516d43cb"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=13bf32058316c250c54c1e60ceaad3eb^sys_idNOT IN93bf72058316c250c54c1e60ceaad324,d7bf72058316c250c54c1e60ceaad320,f1126e194716c2508bb7bf99516d43ce,f1126e194716c2508bb7bf99516d43ec"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">818610fb83864e10c54c1e60ceaad3c6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>93bf72058316c250c54c1e60ceaad324</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>87640778-2654-4e61-af2b-e854c29cb6b2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=93bf72058316c250c54c1e60ceaad324"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=93bf72058316c250c54c1e60ceaad324"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93bf72058316c250c54c1e60ceaad324"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">018610fb83864e10c54c1e60ceaad3bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>d7bf72058316c250c54c1e60ceaad320</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>ec365fa6-5eb9-4613-b207-f10ab321eb27</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d7bf72058316c250c54c1e60ceaad320"/>
+    <sys_element_mapping action="delete_multiple" query="id=d7bf72058316c250c54c1e60ceaad320"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d7bf72058316c250c54c1e60ceaad320</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>d7bf72058316c250c54c1e60ceaad323</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:24:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{bd3965a7-85df-49e7-acb4-886d0090b23e.has_error}}=true</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d7bf72058316c250c54c1e60ceaad320"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7bf72058316c250c54c1e60ceaad320"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51122e194716c2508bb7bf99516d43b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>f1126e194716c2508bb7bf99516d43ce</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>4f03dba4-d7fe-46ab-bc8e-be799175d355</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f1126e194716c2508bb7bf99516d43ce"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f1126e194716c2508bb7bf99516d43ce"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1126e194716c2508bb7bf99516d43ce"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51122e194716c2508bb7bf99516d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Update Jira Issue From Task">13bf32058316c250c54c1e60ceaad3eb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>f1126e194716c2508bb7bf99516d43ec</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:07</sys_updated_on>
+        <ui_id>608f665f-6f3c-4fd8-97fa-7efb7a211c59</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f1126e194716c2508bb7bf99516d43ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f1126e194716c2508bb7bf99516d43ec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>79126e194716c2508bb7bf99516d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f1126e194716c2508bb7bf99516d43ec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 09:49:32</sys_created_on>
+        <sys_id>b5126e194716c2508bb7bf99516d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-20 09:49:32</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=f1126e194716c2508bb7bf99516d43ec"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f1126e194716c2508bb7bf99516d43ec"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1126e194716c2508bb7bf99516d43ec"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_13bf32058316c250c54c1e60ceaad3eb^sys_idNOT IN53bf32058316c250c54c1e60ceaad3fd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_record</element>
+        <help/>
+        <hint/>
+        <label>Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_13bf32058316c250c54c1e60ceaad3eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:36</sys_created_on>
+        <sys_id>53bf32058316c250c54c1e60ceaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:20:36</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_13bf32058316c250c54c1e60ceaad3eb"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ee8db2418316c250c54c1e60ceaad321</sys_id>
+        <latest_snapshot>13bf32058316c250c54c1e60ceaad3eb</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-hotfix2a-04-03-2024_04-09-2024_1017.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ee8db2418316c250c54c1e60ceaad321"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ee8db2418316c250c54c1e60ceaad321^sys_idNOT IN6fbf72058316c250c54c1e60ceaad3cd"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"6fbf72058316c250c54c1e60ceaad3cd","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Update Jira Issue From Task">ee8db2418316c250c54c1e60ceaad321</plan_id>
+        <snapshot>9c39ee2483264290c54c1e60ceaad30d</snapshot>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-19 17:20:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6fbf72058316c250c54c1e60ceaad3cd</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 16:01:08</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

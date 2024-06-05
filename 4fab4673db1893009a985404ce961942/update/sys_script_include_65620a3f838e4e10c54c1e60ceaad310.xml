@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_jira_spoke.JiraCustomUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Various custom utility functions to assist the execution of Jira action scripts.</description>
+        <name>JiraCustomUtils</name>
+        <script><![CDATA[var JiraCustomUtils = Class.create();
+
+JiraCustomUtils.SYNC_STATUS = {
+	NOT_BONDED: "NOT_E_BONDED",
+	BONDED: "E_BONDED",
+	PROGRESS: "IN_PROGRESS",
+	ERROR: "ERROR"
+};
+
+JiraCustomUtils.TRIGGER_TYPE = {
+	CREATE: "u_create_issue_condition",
+	UPDATE: "u_update_issue_condition"
+};
+
+JiraCustomUtils.SUBFLOWS = {
+	CREATE_ISSUE: "sn_jira_spoke.create_jira_issue_from_task",
+	ADD_NOTE: "sn_jira_spoke.add_latest_work_note_to_jira",
+	ADD_ATTACHMENT: "sn_jira_spoke.send_attachment_to_jira",
+	UPDATE_ISSUE: "sn_jira_spoke.update_jira_issue_from_task"
+};
+
+JiraCustomUtils.TABLES = {
+	TASK: "task",
+	CHOICE: "sys_choice",
+	TRIGGER: "sn_jira_spoke_integration_trigger"
+};
+
+JiraCustomUtils.prototype = {
+
+    initialize: function () {
+
+	},
+
+	/**
+	  Functionality : Is Jira Integration up and running?
+	  This does not stop webhooks from being executed, but they will also make usageif this method inside
+	  To deactivate those completely, you can do to the table: sys_decision_question
+	  Return : boolean
+	*/
+	isOutboundAPIEnabled: function () {
+        return gs.getProperty("sn_jira_spoke.itsm.api.outbound.enabled", "false") === "true" ? true : false;
+    },
+
+	/**
+	  Functionality : Identifier of the custom field that will store the ServiceNow sys_id in Jira
+	  Return : string
+	*/
+    getServiceNowCustomFieldID: function () {
+        return "customfield_" + gs.getProperty("sn_jira_spoke.servicenow.customfield_id").trim();
+    },
+
+	/**
+	  Functionality : Identifier of the custom field that will store the severity values in Jira
+	  Return : string
+	*/
+    getSeverityCustomFieldID: function () {
+        return "customfield_" + gs.getProperty("sn_jira_spoke.severity.customfield_id").trim();
+    },
+
+	/**
+	  Functionality : API service account ID in Jira that will be sending webhook requests to ServiceNow.
+	  Return : string
+	*/
+	getServiceAccountID: function () {
+        return gs.getProperty("sn_jira_spoke.api.service_account.id").trim();
+    },
+
+	/**
+	  Params : string - Name of the ServiceNow table
+	  Functionality : Get the trigger record for a given table
+	  Return : GlideRecord of Trigger table or undefined if not found
+	*/
+	getTrigger: function (table) {
+		var triggerRecord = new GlideRecord(JiraCustomUtils.TABLES.TRIGGER);
+		triggerRecord.addQuery("u_active", true);
+		triggerRecord.addQuery("u_table", table);
+		triggerRecord.query();
+		if (triggerRecord.next()) {
+			return triggerRecord;
+		}
+		return;
+	},
+
+	/**
+	  Functionality : Array list of task tables available for the integration between the Jira and ServiceNow
+	  Return : Javascript Array []
+	*/
+    getAvailableTables: function () {
+		var tables = [];
+		var triggerRecord = new GlideRecord(JiraCustomUtils.TABLES.TRIGGER);
+		triggerRecord.addQuery("u_active", true);
+		triggerRecord.query();
+		while (triggerRecord.next()) {
+			tables.push(triggerRecord.getValue("u_table"));
+		}
+		return tables;
+    },
+
+	/**
+	  Params : string - Name of the ServiceNow table
+	  Functionality : Whether or not a given table is allowed to integrate with Jira
+	  Return : boolean
+	*/
+    isTableAllowed: function (tableName) {
+        if (gs.nil(tableName)) {
+            return false;
+        }
+        return this.getAvailableTables().indexOf(tableName) > -1;
+    },
+
+	/**
+	  Params : GlideRecord - Any task record in ServiceNow
+	  Functionality : Whether or not a given task record in ServiceNow can start a sync with Jira
+	  Return : boolean
+	*/
+    isEligibleForCreatingIssue: function (task) {
+		if (gs.nil(task) || !task.isValidRecord()) {
+            return false;
+        }
+        if (!this.isOutboundAPIEnabled()) {
+            return false;
+        }
+		if (!this.isTableAllowed(task.getValue("sys_class_name"))) {
+			return false;
+		}
+		return this.checkRecord(task, JiraCustomUtils.TRIGGER_TYPE.CREATE);
+    },
+
+	/**
+	  Params : GlideRecord - Any task record in ServiceNow
+	  Functionality : Whether or not a given task record in ServiceNow can update an issue in Jira or be updated by Jira in ServiceNow
+	  Return : boolean
+	*/
+    isEligibleForUpdatingIssue: function (task) {
+        if (gs.nil(task) || !task.isValidRecord()) {
+            return false;
+        }
+		if (!this.isOutboundAPIEnabled()) {
+            return false;
+        }
+		if (!this.isTableAllowed(task.getValue("sys_class_name"))) {
+			return false;
+		}
+		return this.checkRecord(task, JiraCustomUtils.TRIGGER_TYPE.UPDATE);
+    },
+
+	/**
+	  Params : GlideRecord - Attachment record in ServiceNow
+	  Functionality : Whether or not a given attachment record in ServiceNow can be sent to Jira
+	  Return : boolean
+	*/
+	isEligibleForSendingAttachments: function (attachmentRecord) {
+		if (gs.nil(attachmentRecord) || !attachmentRecord.isValidRecord()) {
+            return false;
+        }
+		var tableName = attachmentRecord.getValue("table_name");
+		if (!this.isTableAllowed(tableName)) {
+			return false;
+		}
+		var task = new GlideRecord(tableName);
+		if (!task.get(attachmentRecord.getValue("table_sys_id"))) {
+			return false;
+		}
+		return this.checkRecord(task, JiraCustomUtils.TRIGGER_TYPE.UPDATE);
+	},
+
+	checkRecord: function (record, conditionField) {
+		var trigger = this.getTrigger(record.getValue("sys_class_name"));
+		if (gs.nil(trigger)) {
+			return false;
+		}
+		return GlideFilter.checkRecord(record, trigger.getValue(conditionField));
+	},
+
+	/**
+	  Params : string - Content of the GlideElement.getJournalEntry
+	  Functionality : Format the value of the work note added in ServiceNow
+	  Return : object: {who, what, original}
+	*/
+	beautifyWorkNote: function (value) {
+
+		/*
+			Example Note:
+			17-05-2024 11:56:54 - Lucas Guerino (Work notes)
+			Here goes the content of the note...
+		*/
+		
+		// Split the input into lines
+		var lines = value.split("\n");
+
+		// Extract the part between the dash and the parenthesis in the first line
+		var firstLine = lines[0];
+		var nameMatch = firstLine.match(/- ([^()]+) \(/);
+
+		// Extract the name if the match is found
+		var name = nameMatch ? nameMatch[1].trim() : "";
+
+		// Get all remaining lines as content
+		var remainingContent = lines.slice(1).join("\n").trim();
+
+		return {
+			who: name,
+			what: remainingContent,
+			original: value
+		};
+	},
+
+	/**
+	  Params : string - ServiceNow impact value
+	  Functionality : Retrieve Jira Severity value for a given ServiceNow impact
+	  Mappings:
+      Jira       SNOW
+      Critical    1
+      High        2
+      Moderate    3
+      Low         4
+	  Return : string - Jira Severity Value
+	*/
+    retrieveJiraSeverity: function (impactValue) {
+        var jiraSeverity = "Low";
+        var severityMap = { 
+			"1": "Critical", 
+			"2": "High",	
+			"3": "Medium",	
+			"4": "Low"
+		};
+        if (impactValue) {
+            jiraSeverity = severityMap[impactValue];
+        }
+        return jiraSeverity;
+    },
+
+	type: "JiraCustomUtils"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-15 15:40:45</sys_created_on>
+        <sys_id>65620a3f838e4e10c54c1e60ceaad310</sys_id>
+        <sys_mod_count>89</sys_mod_count>
+        <sys_name>JiraCustomUtils</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_script_include_65620a3f838e4e10c54c1e60ceaad310</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-03 07:57:17</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c264010000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_65620a3f838e4e10c54c1e60ceaad310</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>bba8f5ae47eec6908bb7bf99516d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

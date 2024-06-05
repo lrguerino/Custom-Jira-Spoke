@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format/>
+        <height/>
+        <image>4ff9440583aa8290c54c1e60ceaad376</image>
+        <name>jira_contextual_sidebar_icon.svg</name>
+        <size_bytes>1329</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-31 14:21:56</sys_created_on>
+        <sys_id>2ad9000583aa8290c54c1e60ceaad3a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>jira_contextual_sidebar_icon.svg</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>db_image_2ad9000583aa8290c54c1e60ceaad3a2</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-31 14:22:13</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>42ece261bb44fa5f0da1ef610dcabf8677e2eee3ea85ff65f2410f0a279b69ed</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1329</size_bytes>
+        <size_compressed>608</size_compressed>
+        <state>available</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-31 14:22:12</sys_created_on>
+        <sys_id>4ff9440583aa8290c54c1e60ceaad376</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2024-05-31 14:22:13</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>2ad9000583aa8290c54c1e60ceaad3a2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="4ff9440583aa8290c54c1e60ceaad376">4ff9440583aa8290c54c1e60ceaad376</sys_attachment>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-31 14:22:12</sys_created_on>
+        <sys_id>8ff9440583aa8290c54c1e60ceaad376</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>fVRLb5tAEP4rq40itQcvM7PvKERqLz310luPDsYB1QkWprbTX99ZIBgstytZHoaZ+R474vFwfBFVWb9UXS7JOin2bXko22P55bAvi+7HuqubXJ6/15uf/JPiWJenr805lyBAcIPom071pqvGAefX3dshl1XX7R+y7HQ6qZNWTfuSEQBkjDeWPJx39duvW4UYY8z6t/Lpkf/KdfutXW/q8q0T9SaXa04fumYvmu32UDJxhUGKlFkVza5pc3kHYKkoZHZViFdl5ILZblNZtsS5ifvMzDGXMSjQEFy452fKpQ0qBO/BpefE+qFqyy1PX0vxjomd69+9c60B5Z21ZO8T6A2MYsBAAOWcJeM/QKwygAH/hWGsBU0fKEZ5cjFVM8p+3VWCR78S55313gcB1QqJVLTIpwCBqQMQjBNWBeOtDoJYl/YaSaBTfLVERuioyNgYvRcIzIhdcFNkuccoFheivvTYqSnMkhWjOxNCiEdCFVw6vlCA0aEWmtWTJecwTQwGjUgGGA/WYB/2DVPk8djrQZcm6gJWrCIiMH23YmmeQeMKk6d9+SWcJf9Isa13u8VaTN5h0CpQOsKhIteHMxMhjuTJX9i7D/YAOAlgZycB8RKGpSNRp3vimToSd4wj7TDRuzgYohF174KFntqYw4UdOLfjv274W278bnef7p4/L92YdkekMLEO8WqlEmWrQY9XGDHyxS6oDtEsTBZ4mhZi2AdrTK/fRm8NpWE+BnA02Ag+DC7qaPnMvJ1ZEC4OhNEAfUP0LFqqL3r16dv19BfxVTLjMQUAAA==</data>
+        <length>800</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="4ff9440583aa8290c54c1e60ceaad376">4ff9440583aa8290c54c1e60ceaad376</sys_attachment>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-31 14:22:12</sys_created_on>
+        <sys_id>03f9440583aa8290c54c1e60ceaad377</sys_id>
+    </sys_attachment_doc>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c25f9a0000001</claim_timestamp>
+        <metadata_update_name>db_image_2ad9000583aa8290c54c1e60ceaad3a2</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>2ba8f5ae47eec6908bb7bf99516d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

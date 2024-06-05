@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="DELETE">
+        <alt/>
+        <element>u_active</element>
+        <name>sn_jira_spoke_jira_integration_trigger</name>
+        <style>background-color:LimeGreen;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 10:23:45</sys_created_on>
+        <sys_id>ce963f7b479a4e508bb7bf99516d4365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sn_jira_spoke_jira_integration_trigger</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ui_style_ce963f7b479a4e508bb7bf99516d4365</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 10:24:12</sys_updated_on>
+        <themed_style/>
+        <value>1</value>
+    </sys_ui_style>
+    <sys_translated_text action="DELETE" query="documentkey=ce963f7b479a4e508bb7bf99516d4365"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ui_style_ce963f7b479a4e508bb7bf99516d4365</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style"><sys_ui_style action="INSERT_OR_UPDATE"><alt/><element>u_active</element><name>sn_jira_spoke_jira_integration_trigger</name><style>background-color:LimeGreen;</style><sys_class_name>sys_ui_style</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-28 10:23:45</sys_created_on><sys_id>ce963f7b479a4e508bb7bf99516d4365</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sn_jira_spoke_jira_integration_trigger</sys_name><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_update_name>sys_ui_style_ce963f7b479a4e508bb7bf99516d4365</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-28 10:24:12</sys_updated_on><themed_style/><value>1</value></sys_ui_style><sys_translated_text action="delete_multiple" query="documentkey=ce963f7b479a4e508bb7bf99516d4365"/></record_update>]]></payload>
+        <payload_hash>-535800680</payload_hash>
+        <record_name>sn_jira_spoke_jira_integration_trigger</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 10:24:12</sys_created_on>
+        <sys_id>abb673bb479a4e508bb7bf99516d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fbeba9ecd0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 10:24:12</sys_updated_on>
+        <type>Style</type>
+        <update_guid>23b673bb4a9a4e50751030f3795238a2</update_guid>
+        <update_guid_history>23b673bb4a9a4e50751030f3795238a2:-535800680,45a63f7b8a9a4e5007a7e580002b6c3c:-1997380679</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:26:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_style">sys_ui_style</sys_db_object>
+        <sys_id>21f0f8f65b384d23abd6bb26ce51ef21</sys_id>
+        <sys_metadata>ce963f7b479a4e508bb7bf99516d4365</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_jira_spoke_jira_integration_trigger</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent display_value="">45722f77475a4e508bb7bf99516d434e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ui_style_ce963f7b479a4e508bb7bf99516d4365</sys_update_name>
+        <sys_update_version display_value="sys_ui_style_ce963f7b479a4e508bb7bf99516d4365">abb673bb479a4e508bb7bf99516d43a2</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:26:09</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c25f7c0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_style_ce963f7b479a4e508bb7bf99516d4365</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>eba8f5ae47eec6908bb7bf99516d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

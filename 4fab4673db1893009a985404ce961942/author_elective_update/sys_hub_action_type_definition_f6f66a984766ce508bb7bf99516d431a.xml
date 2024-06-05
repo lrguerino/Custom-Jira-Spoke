@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Utility Actions">108ed23e0f62201037983a3485767ebd</category>
+        <copied_from>20f4e6944766ce508bb7bf99516d4334</copied_from>
+        <copied_from_name>Is Eligible For Inbound Updates</copied_from_name>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>is_eligible_for_outbound_attachments</internal_name>
+        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.task_record}}","label":"action➛Task Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[80257526-4278-45a5-8451-f02607af565e].result}}","label":"step➛Execute Script➛Result","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>2907aa984766ce508bb7bf99516d43eb</master_snapshot>
+        <name>Is Eligible For Outbound Attachments By Task Record</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6f66a984766ce508bb7bf99516d431a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Is Eligible For Outbound Attachments By Task Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:28</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_variable_value action="DELETE" query="document_key=f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>f6f66a984766ce508bb7bf99516d431a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>07f66a984766ce508bb7bf99516d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">4ff66a984766ce508bb7bf99516d436c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>f6f66a984766ce508bb7bf99516d431a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>43f66a984766ce508bb7bf99516d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Result">03f66a984766ce508bb7bf99516d4364</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>f6f66a984766ce508bb7bf99516d431a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>c7f66a984766ce508bb7bf99516d439b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:52</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD0ff66a98ad66ce509852426d23335162":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD0ff66a98ad66ce509852426d23335162.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"72c648d9-07f7-43d0-9a4d-0b0f96c322ca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0ff66a98ad66ce509852426d23335162\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">8ff66a984766ce508bb7bf99516d4368</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_element_mapping action="DELETE">
+        <field>result</field>
+        <id>f6f66a984766ce508bb7bf99516d431a</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>4bf66a984766ce508bb7bf99516d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</table>
+        <value>{{step[80257526-4278-45a5-8451-f02607af565e].result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__action_status__</field>
+        <id>f6f66a984766ce508bb7bf99516d431a</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>cff66a984766ce508bb7bf99516d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__dont_treat_as_error__</field>
+        <id>f6f66a984766ce508bb7bf99516d431a</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>0ff66a984766ce508bb7bf99516d439a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN83f66a984766ce508bb7bf99516d4328"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</action>
+        <cid>80257526-4278-45a5-8451-f02607af565e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Execute Script</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>83f66a984766ce508bb7bf99516d4328</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:26</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=83f66a984766ce508bb7bf99516d4328"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83f66a984766ce508bb7bf99516d4328</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>c7f66a984766ce508bb7bf99516d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>83f66a984766ce508bb7bf99516d4328</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>cff66a984766ce508bb7bf99516d435e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:26</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    &#13;
+    outputs.result = new JiraCustomUtils().isEligibleForOutboundAttachmentsByTaskRecord(inputs.task);&#13;
+    &#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=83f66a984766ce508bb7bf99516d4328"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>83f66a984766ce508bb7bf99516d4328</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>83f66a984766ce508bb7bf99516d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>83f66a984766ce508bb7bf99516d4328</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>47f66a984766ce508bb7bf99516d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>task</field>
+        <id>83f66a984766ce508bb7bf99516d4328</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>cbf66a984766ce508bb7bf99516d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_83f66a984766ce508bb7bf99516d4328</table>
+        <value>{{action.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328^id=83f66a984766ce508bb7bf99516d4328"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=83f66a984766ce508bb7bf99516d4328"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=83f66a984766ce508bb7bf99516d4328^sys_idNOT IN4ff66a984766ce508bb7bf99516d432b"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Execute Script">83f66a984766ce508bb7bf99516d4328</model>
+        <model_id>83f66a984766ce508bb7bf99516d4328</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_83f66a984766ce508bb7bf99516d4328</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>4ff66a984766ce508bb7bf99516d432b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=83f66a984766ce508bb7bf99516d4328^sys_idNOT INcff66a984766ce508bb7bf99516d4330"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=daa7c5ed-693f-49a4-843f-9d878c45c0bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Execute Script">83f66a984766ce508bb7bf99516d4328</model>
+        <model_id>83f66a984766ce508bb7bf99516d4328</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>cff66a984766ce508bb7bf99516d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=83f66a984766ce508bb7bf99516d4328"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328^sys_idNOT IN4ff66a984766ce508bb7bf99516d4359"/>
+    <sys_documentation action="DELETE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>4ff66a984766ce508bb7bf99516d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=f6f66a984766ce508bb7bf99516d431a^sys_idNOT INc7f66a984766ce508bb7bf99516d4320"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f674d003-3e3f-456c-b0aa-16679e365b5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Task Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</model>
+        <model_id>f6f66a984766ce508bb7bf99516d431a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>c7f66a984766ce508bb7bf99516d4320</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=c7f66a984766ce508bb7bf99516d4320"/>
+    <sys_hub_action_output action="DELETE" query="model=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN03f66a984766ce508bb7bf99516d4364,4ff66a984766ce508bb7bf99516d436c,8ff66a984766ce508bb7bf99516d4368"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=514b5f3c-8807-4197-a960-5c1a6307e6d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</model>
+        <model_id>f6f66a984766ce508bb7bf99516d431a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>03f66a984766ce508bb7bf99516d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=03f66a984766ce508bb7bf99516d4364"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=03f66a984766ce508bb7bf99516d4364"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b4c72ab4-6d8f-4afc-a314-b5390759786c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</model>
+        <model_id>f6f66a984766ce508bb7bf99516d431a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>4ff66a984766ce508bb7bf99516d436c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4ff66a984766ce508bb7bf99516d436c"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=4ff66a984766ce508bb7bf99516d436c"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FD0ff66a98ad66ce509852426d23335162</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4fab4673db1893009a985404ce961942</scope_name>
+        <serialized_content>{"FlowDesigner:FD0ff66a98ad66ce509852426d23335162":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD0ff66a98ad66ce509852426d23335162.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"72c648d9-07f7-43d0-9a4d-0b0f96c322ca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0ff66a98ad66ce509852426d23335162\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cff66a984766ce508bb7bf99516d4362</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:26</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD0ff66a98ad66ce509852426d23335162,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=72c648d9-07f7-43d0-9a4d-0b0f96c322ca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</model>
+        <model_id>f6f66a984766ce508bb7bf99516d431a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>8ff66a984766ce508bb7bf99516d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=8ff66a984766ce508bb7bf99516d4368"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=8ff66a984766ce508bb7bf99516d4368"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN0ff66a984766ce508bb7bf99516d439d"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</action_type_id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>0ff66a984766ce508bb7bf99516d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=0ff66a984766ce508bb7bf99516d439d"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN4ff66a984766ce508bb7bf99516d4325"/>
+    <sys_documentation action="DELETE">
+        <element>task_record</element>
+        <help/>
+        <hint/>
+        <label>Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>4ff66a984766ce508bb7bf99516d4325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN43f66a984766ce508bb7bf99516d4372,8ff66a984766ce508bb7bf99516d436b,cff66a984766ce508bb7bf99516d4367"/>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>43f66a984766ce508bb7bf99516d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>8ff66a984766ce508bb7bf99516d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:42</sys_created_on>
+        <sys_id>cff66a984766ce508bb7bf99516d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:42</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN3907ea984766ce508bb7bf99516d4378"/>
+    <sys_hub_action_plan action="DELETE">
+        <action_id display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3907ea984766ce508bb7bf99516d4378","name":"plan","plan_signature":null}}</plan>
+        <snapshot>f907ea984766ce508bb7bf99516d4335</snapshot>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3907ea984766ce508bb7bf99516d4378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:54</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Utility Actions">108ed23e0f62201037983a3485767ebd</category>
+        <copied_from>20f4e6944766ce508bb7bf99516d4334</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>is_eligible_for_outbound_attachments</internal_name>
+        <label_cache>[{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.task_record}}","label":"action➛Task Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[80257526-4278-45a5-8451-f02607af565e].result}}","label":"step➛Execute Script➛Result","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Is Eligible For Outbound Attachments By Task Record</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Is Eligible For Outbound Attachments By Task Record">f6f66a984766ce508bb7bf99516d431a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2907aa984766ce508bb7bf99516d43eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:27</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_variable_value action="DELETE" query="document_key=2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>2907aa984766ce508bb7bf99516d43eb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>7507ea984766ce508bb7bf99516d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">7107ea984766ce508bb7bf99516d4327</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>2907aa984766ce508bb7bf99516d43eb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>b107ea984766ce508bb7bf99516d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">3107ea984766ce508bb7bf99516d432b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>2907aa984766ce508bb7bf99516d43eb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>fd07ea984766ce508bb7bf99516d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Result">b907ea984766ce508bb7bf99516d4322</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_element_mapping action="DELETE">
+        <field>result</field>
+        <id>2907aa984766ce508bb7bf99516d43eb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>f507ea984766ce508bb7bf99516d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</table>
+        <value>{{step[80257526-4278-45a5-8451-f02607af565e].result}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__action_status__</field>
+        <id>2907aa984766ce508bb7bf99516d43eb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>7d07ea984766ce508bb7bf99516d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__dont_treat_as_error__</field>
+        <id>2907aa984766ce508bb7bf99516d43eb</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>b907ea984766ce508bb7bf99516d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=2907aa984766ce508bb7bf99516d43eb^sys_idNOT INe907ea984766ce508bb7bf99516d430f"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</action>
+        <cid>80257526-4278-45a5-8451-f02607af565e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Execute Script</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_id>e907ea984766ce508bb7bf99516d430f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:28</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=e907ea984766ce508bb7bf99516d430f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e907ea984766ce508bb7bf99516d430f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>bd07ea984766ce508bb7bf99516d431e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:28</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    &#13;
+    outputs.result = new JiraCustomUtils().isEligibleForOutboundAttachmentsByTaskRecord(inputs.task);&#13;
+    &#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e907ea984766ce508bb7bf99516d430f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>f907ea984766ce508bb7bf99516d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e907ea984766ce508bb7bf99516d430f"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>e907ea984766ce508bb7bf99516d430f</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>b507ea984766ce508bb7bf99516d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>e907ea984766ce508bb7bf99516d430f</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>7907ea984766ce508bb7bf99516d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>task</field>
+        <id>e907ea984766ce508bb7bf99516d430f</id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>f507ea984766ce508bb7bf99516d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_e907ea984766ce508bb7bf99516d430f</table>
+        <value>{{action.task_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f^id=e907ea984766ce508bb7bf99516d430f"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e907ea984766ce508bb7bf99516d430f"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=e907ea984766ce508bb7bf99516d430f^sys_idNOT IN6107ea984766ce508bb7bf99516d4313"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Execute Script">e907ea984766ce508bb7bf99516d430f</model>
+        <model_id>e907ea984766ce508bb7bf99516d430f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_e907ea984766ce508bb7bf99516d430f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_id>6107ea984766ce508bb7bf99516d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=e907ea984766ce508bb7bf99516d430f^sys_idNOT INa907ea984766ce508bb7bf99516d4317"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=daa7c5ed-693f-49a4-843f-9d878c45c0bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Execute Script">e907ea984766ce508bb7bf99516d430f</model>
+        <model_id>e907ea984766ce508bb7bf99516d430f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_id>a907ea984766ce508bb7bf99516d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=e907ea984766ce508bb7bf99516d430f"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f^sys_idNOT IN3d07ea984766ce508bb7bf99516d431a"/>
+    <sys_documentation action="DELETE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>3d07ea984766ce508bb7bf99516d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=2907aa984766ce508bb7bf99516d43eb^sys_idNOT INad07aa984766ce508bb7bf99516d43ef"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f674d003-3e3f-456c-b0aa-16679e365b5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Task Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</model>
+        <model_id>2907aa984766ce508bb7bf99516d43eb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Task" name="task">task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_id>ad07aa984766ce508bb7bf99516d43ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ad07aa984766ce508bb7bf99516d43ef"/>
+    <sys_hub_action_output action="DELETE" query="model=2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN3107ea984766ce508bb7bf99516d432b,7107ea984766ce508bb7bf99516d4327,b907ea984766ce508bb7bf99516d4322"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b4c72ab4-6d8f-4afc-a314-b5390759786c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</model>
+        <model_id>2907aa984766ce508bb7bf99516d43eb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>3107ea984766ce508bb7bf99516d432b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=3107ea984766ce508bb7bf99516d432b"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=3107ea984766ce508bb7bf99516d432b"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=72c648d9-07f7-43d0-9a4d-0b0f96c322ca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</model>
+        <model_id>2907aa984766ce508bb7bf99516d43eb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>7107ea984766ce508bb7bf99516d4327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=7107ea984766ce508bb7bf99516d4327"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=7107ea984766ce508bb7bf99516d4327"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=514b5f3c-8807-4197-a960-5c1a6307e6d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</model>
+        <model_id>2907aa984766ce508bb7bf99516d43eb</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>b907ea984766ce508bb7bf99516d4322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=b907ea984766ce508bb7bf99516d4322"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=b907ea984766ce508bb7bf99516d4322"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN3907ea984766ce508bb7bf99516d4335"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Is Eligible For Outbound Attachments By Task Record">2907aa984766ce508bb7bf99516d43eb</action_type_id>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>3907ea984766ce508bb7bf99516d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=3907ea984766ce508bb7bf99516d4335"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb^sys_idNOT INa507ea984766ce508bb7bf99516d430d"/>
+    <sys_documentation action="DELETE">
+        <element>task_record</element>
+        <help/>
+        <hint/>
+        <label>Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:52</sys_created_on>
+        <sys_id>a507ea984766ce508bb7bf99516d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:52</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN7107ea984766ce508bb7bf99516d432a,b107ea984766ce508bb7bf99516d4326,f907ea984766ce508bb7bf99516d432f"/>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>7107ea984766ce508bb7bf99516d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>b107ea984766ce508bb7bf99516d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:52:53</sys_created_on>
+        <sys_id>f907ea984766ce508bb7bf99516d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:52:53</sys_updated_on>
+        <u_field_explanation/>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb"/>
+    <sys_hub_action_type_definition action="DELETE">
+        <sys_id>f6f66a984766ce508bb7bf99516d431a</sys_id>
+        <latest_snapshot>2907aa984766ce508bb7bf99516d43eb</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-hotfix2a-04-03-2024_04-09-2024_1017.zip</compiler_build>
+    </sys_hub_action_type_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Utility Actions"&gt;108ed23e0f62201037983a3485767ebd&lt;/category&gt;&lt;copied_from&gt;20f4e6944766ce508bb7bf99516d4334&lt;/copied_from&gt;&lt;copied_from_name&gt;Is Eligible For Inbound Updates&lt;/copied_from_name&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;is_eligible_for_outbound_attachments&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.task_record}}","label":"action➛Task Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[80257526-4278-45a5-8451-f02607af565e].result}}","label":"step➛Execute Script➛Result","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;2907aa984766ce508bb7bf99516d43eb&lt;/master_snapshot&gt;&lt;name&gt;Is Eligible For Outbound Attachments By Task Record&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Is Eligible For Outbound Attachments By Task Record&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:28&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;f6f66a984766ce508bb7bf99516d431a&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;07f66a984766ce508bb7bf99516d439b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;4ff66a984766ce508bb7bf99516d436c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;f6f66a984766ce508bb7bf99516d431a&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;43f66a984766ce508bb7bf99516d439b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Result"&gt;03f66a984766ce508bb7bf99516d4364&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;f6f66a984766ce508bb7bf99516d431a&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;c7f66a984766ce508bb7bf99516d439b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:52&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD0ff66a98ad66ce509852426d23335162":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD0ff66a98ad66ce509852426d23335162.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"72c648d9-07f7-43d0-9a4d-0b0f96c322ca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0ff66a98ad66ce509852426d23335162\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;8ff66a984766ce508bb7bf99516d4368&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;result&lt;/field&gt;&lt;id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4bf66a984766ce508bb7bf99516d439a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/table&gt;&lt;value&gt;{{step[80257526-4278-45a5-8451-f02607af565e].result}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__action_status__&lt;/field&gt;&lt;id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;cff66a984766ce508bb7bf99516d439a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__dont_treat_as_error__&lt;/field&gt;&lt;id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;0ff66a984766ce508bb7bf99516d439a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/action&gt;&lt;cid&gt;80257526-4278-45a5-8451-f02607af565e&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Execute Script&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;83f66a984766ce508bb7bf99516d4328&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:26&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;83f66a984766ce508bb7bf99516d4328&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;c7f66a984766ce508bb7bf99516d435e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;83f66a984766ce508bb7bf99516d4328&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;cff66a984766ce508bb7bf99516d435e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:26&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+    &amp;#13;
+    outputs.result = new JiraCustomUtils().isEligibleForOutboundAttachmentsByTaskRecord(inputs.task);&amp;#13;
+    &amp;#13;
+})(inputs, outputs);&amp;#13;
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;83f66a984766ce508bb7bf99516d4328&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;83f66a984766ce508bb7bf99516d435e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;83f66a984766ce508bb7bf99516d4328&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;47f66a984766ce508bb7bf99516d435e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;task&lt;/field&gt;&lt;id&gt;83f66a984766ce508bb7bf99516d4328&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;cbf66a984766ce508bb7bf99516d435f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_83f66a984766ce508bb7bf99516d4328&lt;/table&gt;&lt;value&gt;{{action.task_record}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328^id=83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=83f66a984766ce508bb7bf99516d4328^sys_idNOT IN4ff66a984766ce508bb7bf99516d432b"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;task&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Execute Script"&gt;83f66a984766ce508bb7bf99516d4328&lt;/model&gt;&lt;model_id&gt;83f66a984766ce508bb7bf99516d4328&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_83f66a984766ce508bb7bf99516d4328&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Task" name="task"&gt;task&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4ff66a984766ce508bb7bf99516d432b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:51&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=83f66a984766ce508bb7bf99516d4328^sys_idNOT INcff66a984766ce508bb7bf99516d4330"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=daa7c5ed-693f-49a4-843f-9d878c45c0bc&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;result&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Result&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Execute Script"&gt;83f66a984766ce508bb7bf99516d4328&lt;/model&gt;&lt;model_id&gt;83f66a984766ce508bb7bf99516d4328&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;cff66a984766ce508bb7bf99516d4330&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=83f66a984766ce508bb7bf99516d4328"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328^sys_idNOT IN4ff66a984766ce508bb7bf99516d4359"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;result&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Result&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_83f66a984766ce508bb7bf99516d4328&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4ff66a984766ce508bb7bf99516d4359&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=f6f66a984766ce508bb7bf99516d431a^sys_idNOT INc7f66a984766ce508bb7bf99516d4320"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f674d003-3e3f-456c-b0aa-16679e365b5c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;task&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;task_record&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Task Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model&gt;&lt;model_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Task" name="task"&gt;task&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;c7f66a984766ce508bb7bf99516d4320&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c7f66a984766ce508bb7bf99516d4320"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN03f66a984766ce508bb7bf99516d4364,4ff66a984766ce508bb7bf99516d436c,8ff66a984766ce508bb7bf99516d4368"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=514b5f3c-8807-4197-a960-5c1a6307e6d0&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;result&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Result&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model&gt;&lt;model_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;03f66a984766ce508bb7bf99516d4364&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=03f66a984766ce508bb7bf99516d4364"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=03f66a984766ce508bb7bf99516d4364"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b4c72ab4-6d8f-4afc-a314-b5390759786c,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model&gt;&lt;model_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4ff66a984766ce508bb7bf99516d436c&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:27&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ff66a984766ce508bb7bf99516d436c"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=4ff66a984766ce508bb7bf99516d436c"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FD0ff66a98ad66ce509852426d23335162&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;4fab4673db1893009a985404ce961942&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FD0ff66a98ad66ce509852426d23335162":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD0ff66a98ad66ce509852426d23335162.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"72c648d9-07f7-43d0-9a4d-0b0f96c322ca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0ff66a98ad66ce509852426d23335162\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cff66a984766ce508bb7bf99516d4362&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:26&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FD0ff66a98ad66ce509852426d23335162,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=72c648d9-07f7-43d0-9a4d-0b0f96c322ca&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model&gt;&lt;model_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;8ff66a984766ce508bb7bf99516d4368&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8ff66a984766ce508bb7bf99516d4368"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=8ff66a984766ce508bb7bf99516d4368"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN0ff66a984766ce508bb7bf99516d439d"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/action_type_id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;0ff66a984766ce508bb7bf99516d439d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0ff66a984766ce508bb7bf99516d439d"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN4ff66a984766ce508bb7bf99516d4325"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;task_record&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Task Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4ff66a984766ce508bb7bf99516d4325&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN43f66a984766ce508bb7bf99516d4372,8ff66a984766ce508bb7bf99516d436b,cff66a984766ce508bb7bf99516d4367"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;43f66a984766ce508bb7bf99516d4372&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;8ff66a984766ce508bb7bf99516d436b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;result&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Result&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:42&lt;/sys_created_on&gt;&lt;sys_id&gt;cff66a984766ce508bb7bf99516d4367&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:42&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f6f66a984766ce508bb7bf99516d431a"/&gt;&lt;sys_hub_action_plan action="delete_multiple" query="action_id=f6f66a984766ce508bb7bf99516d431a^sys_idNOT IN3907ea984766ce508bb7bf99516d4378"/&gt;&lt;sys_hub_action_plan action="INSERT_OR_UPDATE"&gt;&lt;action_id display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/action_id&gt;&lt;plan&gt;{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3907ea984766ce508bb7bf99516d4378","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;snapshot&gt;f907ea984766ce508bb7bf99516d4335&lt;/snapshot&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3907ea984766ce508bb7bf99516d4378&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:54&lt;/sys_updated_on&gt;&lt;/sys_hub_action_plan&gt;&lt;sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Utility Actions"&gt;108ed23e0f62201037983a3485767ebd&lt;/category&gt;&lt;copied_from&gt;20f4e6944766ce508bb7bf99516d4334&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;is_eligible_for_outbound_attachments&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action._}}","label":"action➛","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.task_record}}","label":"action➛Task Record","type":"action","ref":"","reference_display":"Task","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[80257526-4278-45a5-8451-f02607af565e].result}}","label":"step➛Execute Script➛Result","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Is Eligible For Outbound Attachments By Task Record&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;parent_action display_value="Is Eligible For Outbound Attachments By Task Record"&gt;f6f66a984766ce508bb7bf99516d431a&lt;/parent_action&gt;&lt;sys_class_name&gt;sys_hub_action_type_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:27&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;2907aa984766ce508bb7bf99516d43eb&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7507ea984766ce508bb7bf99516d4333&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;7107ea984766ce508bb7bf99516d4327&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;2907aa984766ce508bb7bf99516d43eb&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;b107ea984766ce508bb7bf99516d4333&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;3107ea984766ce508bb7bf99516d432b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;2907aa984766ce508bb7bf99516d43eb&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;fd07ea984766ce508bb7bf99516d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Result"&gt;b907ea984766ce508bb7bf99516d4322&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;result&lt;/field&gt;&lt;id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;f507ea984766ce508bb7bf99516d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/table&gt;&lt;value&gt;{{step[80257526-4278-45a5-8451-f02607af565e].result}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__action_status__&lt;/field&gt;&lt;id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7d07ea984766ce508bb7bf99516d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__dont_treat_as_error__&lt;/field&gt;&lt;id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;b907ea984766ce508bb7bf99516d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=2907aa984766ce508bb7bf99516d43eb^sys_idNOT INe907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/action&gt;&lt;cid&gt;80257526-4278-45a5-8451-f02607af565e&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Execute Script&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;e907ea984766ce508bb7bf99516d430f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:28&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;e907ea984766ce508bb7bf99516d430f&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;bd07ea984766ce508bb7bf99516d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:28&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+    &amp;#13;
+    outputs.result = new JiraCustomUtils().isEligibleForOutboundAttachmentsByTaskRecord(inputs.task);&amp;#13;
+    &amp;#13;
+})(inputs, outputs);&amp;#13;
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;e907ea984766ce508bb7bf99516d430f&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;f907ea984766ce508bb7bf99516d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;e907ea984766ce508bb7bf99516d430f&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;b507ea984766ce508bb7bf99516d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;e907ea984766ce508bb7bf99516d430f&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7907ea984766ce508bb7bf99516d431e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;task&lt;/field&gt;&lt;id&gt;e907ea984766ce508bb7bf99516d430f&lt;/id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;f507ea984766ce508bb7bf99516d431f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_e907ea984766ce508bb7bf99516d430f&lt;/table&gt;&lt;value&gt;{{action.task_record}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f^id=e907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=e907ea984766ce508bb7bf99516d430f^sys_idNOT IN6107ea984766ce508bb7bf99516d4313"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;task&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;task&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Execute Script"&gt;e907ea984766ce508bb7bf99516d430f&lt;/model&gt;&lt;model_id&gt;e907ea984766ce508bb7bf99516d430f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_e907ea984766ce508bb7bf99516d430f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Task" name="task"&gt;task&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;6107ea984766ce508bb7bf99516d4313&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=e907ea984766ce508bb7bf99516d430f^sys_idNOT INa907ea984766ce508bb7bf99516d4317"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=daa7c5ed-693f-49a4-843f-9d878c45c0bc&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;result&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Result&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Execute Script"&gt;e907ea984766ce508bb7bf99516d430f&lt;/model&gt;&lt;model_id&gt;e907ea984766ce508bb7bf99516d430f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;a907ea984766ce508bb7bf99516d4317&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=e907ea984766ce508bb7bf99516d430f"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f^sys_idNOT IN3d07ea984766ce508bb7bf99516d431a"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;result&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Result&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_e907ea984766ce508bb7bf99516d430f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;3d07ea984766ce508bb7bf99516d431a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=2907aa984766ce508bb7bf99516d43eb^sys_idNOT INad07aa984766ce508bb7bf99516d43ef"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=f674d003-3e3f-456c-b0aa-16679e365b5c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;task&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;task_record&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Task Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model&gt;&lt;model_id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="Task" name="task"&gt;task&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;ad07aa984766ce508bb7bf99516d43ef&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:52&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ad07aa984766ce508bb7bf99516d43ef"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN3107ea984766ce508bb7bf99516d432b,7107ea984766ce508bb7bf99516d4327,b907ea984766ce508bb7bf99516d4322"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b4c72ab4-6d8f-4afc-a314-b5390759786c,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model&gt;&lt;model_id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;3107ea984766ce508bb7bf99516d432b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:59:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3107ea984766ce508bb7bf99516d432b"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=3107ea984766ce508bb7bf99516d432b"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=72c648d9-07f7-43d0-9a4d-0b0f96c322ca&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model&gt;&lt;model_id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7107ea984766ce508bb7bf99516d4327&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7107ea984766ce508bb7bf99516d4327"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=7107ea984766ce508bb7bf99516d4327"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=514b5f3c-8807-4197-a960-5c1a6307e6d0&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;result&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Result&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model&gt;&lt;model_id&gt;2907aa984766ce508bb7bf99516d43eb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;b907ea984766ce508bb7bf99516d4322&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b907ea984766ce508bb7bf99516d4322"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=b907ea984766ce508bb7bf99516d4322"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN3907ea984766ce508bb7bf99516d4335"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Is Eligible For Outbound Attachments By Task Record"&gt;2907aa984766ce508bb7bf99516d43eb&lt;/action_type_id&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;3907ea984766ce508bb7bf99516d4335&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=3907ea984766ce508bb7bf99516d4335"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb^sys_idNOT INa507ea984766ce508bb7bf99516d430d"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;task_record&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Task Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;a507ea984766ce508bb7bf99516d430d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:52&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb^sys_idNOT IN7107ea984766ce508bb7bf99516d432a,b107ea984766ce508bb7bf99516d4326,f907ea984766ce508bb7bf99516d432f"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7107ea984766ce508bb7bf99516d432a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;result&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Result&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;b107ea984766ce508bb7bf99516d4326&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 17:52:53&lt;/sys_created_on&gt;&lt;sys_id&gt;f907ea984766ce508bb7bf99516d432f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 17:52:53&lt;/sys_updated_on&gt;&lt;u_field_explanation/&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_2907aa984766ce508bb7bf99516d43eb"/&gt;&lt;sys_hub_action_type_definition action="UPDATE"&gt;&lt;sys_id&gt;f6f66a984766ce508bb7bf99516d431a&lt;/sys_id&gt;&lt;latest_snapshot&gt;2907aa984766ce508bb7bf99516d43eb&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-vancouver-07-06-2023__patch7-hotfix2a-04-03-2024_04-09-2024_1017.zip&lt;/compiler_build&gt;&lt;/sys_hub_action_type_definition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1677244340</payload_hash>
+        <record_name>Is Eligible For Outbound Attachments By Task Record</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-29 17:59:28</sys_created_on>
+        <sys_id>da88a21c4766ce508bb7bf99516d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc581cb4c0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-29 17:59:28</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>5288a21c6566ce506b2faff945898da0</update_guid>
+        <update_guid_history>5288a21c6566ce506b2faff945898da0:-1677244340,0288a21c9566ce50f5ac70bf204d2838:-1488916005,b107ea98d166ce5016a91358c3ea7c69:1859237953,e907aa98aa66ce50199d008a515bc2e3:-232503539,9bf66a989866ce509e211b95977c5ed2:1947402681,c3f66a986466ce50a4a69d2204cad31e:-1262381395</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-30 06:48:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>1c354ef6cc564b4c808584446e9a2de4</sys_id>
+        <sys_metadata>f6f66a984766ce508bb7bf99516d431a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Is Eligible For Outbound Attachments By Task Record</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a">da88a21c4766ce508bb7bf99516d43a0</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 06:48:52</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262810000001</claim_timestamp>
+        <metadata_update_name>sys_hub_action_type_definition_f6f66a984766ce508bb7bf99516d431a</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>f7a8f5ae47eec6908bb7bf99516d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

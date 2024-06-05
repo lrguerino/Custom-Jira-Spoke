@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Jira Task Information">beb68c2d47dac2508bb7bf99516d437e</macroponent>
+        <name>Manage Jira Actions</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+    const action = api.data.jira_actions.output;
+    
+   // api.setState("hideCreateButton", !action.canCreate);
+    //api.setState("hideAddNote", !action.canAddNotes);
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-25 18:38:12</sys_created_on>
+        <sys_id>3de94a8b47568a508bb7bf99516d4345</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Manage Jira Actions</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-04 08:36:12</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Jira Task Information"&gt;beb68c2d47dac2508bb7bf99516d437e&lt;/macroponent&gt;&lt;name&gt;Manage Jira Actions&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+    const action = api.data.jira_actions.output;
+    
+   // api.setState("hideCreateButton", !action.canCreate);
+    //api.setState("hideAddNote", !action.canAddNotes);
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 18:38:12&lt;/sys_created_on&gt;&lt;sys_id&gt;3de94a8b47568a508bb7bf99516d4345&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;Manage Jira Actions&lt;/sys_name&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-04 08:36:12&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>380028435</payload_hash>
+        <record_name>Manage Jira Actions</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-04 08:36:12</sys_created_on>
+        <sys_id>b9216b4a47a686908bb7bf99516d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fe264430a0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-04 08:36:12</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>31216b4acfa68690f833407161f46806</update_guid>
+        <update_guid_history>31216b4acfa68690f833407161f46806:380028435,34be032c94a6069020931b13d7ac1420:-1383496749,dfcc0584fb228e50a3900a1ad2685457:-715612453,421393b7081a4e505d20dcc2d2110edf:808826884,9dd2e3abce5a0e502266636a25df064c:1833422182,bd31672ba15a0e50af8fee9ce84c5902:1587023195,4511632b9c5a0e50f7c5e95f0e8f3f3c:-528079335,5f6c0f13655aca5087c504e898c0f60f:1833422182,822cc313135aca507bd4f4df6a5a803f:1476817990,88cb8fdfee1aca50259c1cad6f925762:-776175624,99f5e2475ed68a50998f82f54666d531:-1853064557,1c75aa0735d68a502c9b4ba9bc93000b:-611014483,f645e6079fd68a50ee3fab8b5981d09b:-77849870,626d428f71568a50485a762b1a87453d:-529240227,6e0b4ecbde568a501d281a3d3a412ece:1010078505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-04 08:47:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>6e07ad974f0a4d34ab634fbda8077d10</sys_id>
+        <sys_metadata>3de94a8b47568a508bb7bf99516d4345</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manage Jira Actions</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345">b9216b4a47a686908bb7bf99516d4306</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-04 08:47:18</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260d30000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_3de94a8b47568a508bb7bf99516d4345</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>2fa8f5ae47eec6908bb7bf99516d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

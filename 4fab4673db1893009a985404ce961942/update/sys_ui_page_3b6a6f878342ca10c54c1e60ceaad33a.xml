@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[addLoadEvent(function() {
+
+    (function(global) {
+		
+		var workNotes = $("jira-modal-work-notes");
+        var sendBtn = $("jira-modal-button");
+		var dialog;
+		var resizeObserver;
+
+		function getNoteValue() {
+			if (!workNotes || !workNotes.value) {
+				return "";
+			}
+			// To make it easy for users to filter Jira comments in the activity stream
+			// We prefix the note with "Note to Jira"
+			return getMessage("Notes to Jira") + ": " + workNotes.value.trim();
+		}
+
+        workNotes.focus();
+
+        if (!config.workspace) {
+            dialog = GlideModal.prototype.get("sn_jira_spoke_modal_notes");
+			var currentWorkNotes = dialog.getPreference("WORK_NOTES");
+			if (currentWorkNotes) {
+                workNotes.value = currentWorkNotes;
+            }
+        } else {
+            var modalTextAreas = document.querySelectorAll(".jira-modal-textarea");
+            var iframeStyle = window.frameElement.style;
+            var formContainer = $("jira-modal-form");
+            resizeObserver = new ResizeObserver(function(entries) {
+                iframeStyle.height = formContainer.offsetHeight + 10 + "px";
+            });
+            for (var i = 0; i < modalTextAreas.length; i++) {
+                resizeObserver.observe(modalTextAreas[i]);
+            }
+        }
+
+        function _debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this,
+                    args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        }
+
+		function processFieldChanges() {
+			var notesWrapper = $("work-notes-wrapper");
+			if (!getNoteValue()) {
+				notesWrapper.removeClassName("is-filled");
+				sendBtn.addClassName("disabled");
+				sendBtn.writeAttribute("aria-disabled", true);
+			} else {
+				notesWrapper.addClassName("is-filled");
+				sendBtn.removeClassName("disabled");
+				sendBtn.writeAttribute("aria-disabled", false);
+			}
+        }
+
+        function send() {
+            if (!sendBtn.hasClassName("disabled")) {
+                if (!config.workspace) {
+                    g_form.setValue("work_notes", getNoteValue());
+                    close();
+                    gsftSubmit(null, g_form.getFormElement(), "send_notes_to_jira");
+                } else {
+                    iframeMsgHelper.confirm({
+                        workNotes: getNoteValue()
+                    });
+                }
+            }
+        }
+
+        function close() {
+            if (!config.workspace) {
+                dialog.destroy();
+            } else {
+                resizeObserver.disconnect();
+                window.location.href = window.location.href + '&sysparm_next_pg=true';
+            }
+        }
+
+        global.jiraModal = {
+            send: send,
+            close: close,
+			processFieldChanges: _debounce(processFieldChanges, 200) // Only execute when left idle for 200 ms
+        };
+    })(window);
+	
+});]]></client_script>
+        <description>Dialog to prompt user to enter work notes before sendind an update over to the Jira Cloud Platform.</description>
+        <direct>false</direct>
+        <endpoint>sn_jira_spoke_modal_notes.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<g:evaluate var="jvar_isNextPg" expression="RP.getParameterValue('sysparm_next_pg')"/>
+	<j:if test="${jvar_isNextPg == 'true'}">
+		<style>
+			.no_next {
+				display: none !important;
+			}
+		</style>
+	</j:if>
+	<style>
+		body {
+			overflow-x: hidden;
+		}
+		#jira-modal-form {
+			overflow: hidden;
+		}
+		.form-horizontal {
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		.jira-modal-textarea {
+			resize: vertical;
+			min-height: 120px
+		}
+		#dialog_buttons .btn{
+			margin-left: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: right;
+		}
+		#work-notes-wrapper .required-marker{
+			display: inline-block;
+		}
+		#work-notes-wrapper label{
+			overflow-wrap: break-word;
+		}
+		#page_timing_div {
+			display:none !important;
+		}
+	</style>
+	<script>
+			var config = {
+				workspace: '${JS_STRING:RP.getParameterValue('sysparm_workspace')}' == 'true'
+			};
+			var iframeMsgHelper = (function () {
+				function createPayload(action, modalId, data) {
+					return {
+						messageType: 'IFRAME_MODAL_MESSAGE_TYPE',
+						modalAction: action,
+						modalId: modalId,
+						data: (data ? data : {})
+					};
+				}
+
+				function pm(window, payload) {
+					if (window.parent === window) {
+						console.warn('Parent is missing. Is this called inside an iFrame?');
+						return;
+					}
+					window.parent.postMessage(payload, location.origin);
+				}
+
+				function IFrameMessagingHelper(window) {
+					this.window = window;
+					this.src = location.href;
+					this.messageHandler = this.messageHandler.bind(this);
+					this.window.addEventListener('message', this.messageHandler);
+				}
+
+				IFrameMessagingHelper.prototype.messageHandler = function (e) {
+					if (e.data.messageType !== 'IFRAME_MODAL_MESSAGE_TYPE' || e.data.modalAction !== 'IFRAME_MODAL_ACTION_INIT') {
+						return;
+					}
+					this.modalId = e.data.modalId;
+				};
+
+				IFrameMessagingHelper.prototype.confirm = function (data) {
+					var payload = createPayload('IFRAME_MODAL_ACTION_CONFIRMED', this.modalId, data);
+					pm(this.window, payload);
+				};
+
+				IFrameMessagingHelper.prototype.cancel = function (data) {
+					var payload = createPayload('IFRAME_MODAL_ACTION_CANCELED', this.modalId, data);
+					pm(this.window, payload);
+				};
+
+				return new IFrameMessagingHelper(window);
+			}());
+
+	</script>
+<div id="jira-modal-form">
+	<div class="form-horizontal no_next">
+
+		<div class="form-group" id="work-notes-wrapper">
+			<label class="col-sm-2 control-label" for="jira-modal-work-notes" style="text-align: right">
+			<span mandatory="true" class="required-marker"></span>
+				${gs.getMessage("Work notes")}
+			</label>
+			<div class="col-sm-10">
+				<textarea required="true" class="form-control jira-modal-textarea" id="jira-modal-work-notes" type="text" oninput="jiraModal.processFieldChanges()" onchange="jiraModal.processFieldChanges()"></textarea>
+			</div>
+		</div>
+
+	</div>
+	<div id="dialog_buttons" class="clearfix pull-right no_next">
+		<button type="button" class="btn btn-default" onclick="jiraModal.close()" title="${gs.getMessage('Close the dialog')}">${gs.getMessage('Cancel')}</button>
+		<button type="button" class="btn btn-primary disabled" aria-disabled="true" id="jira-modal-button" title="${gs.getMessage('Send to Jira')}" onclick="jiraModal.send()">${gs.getMessage('Send')}</button>
+	</div>
+</div>
+</j:jelly>]]></html>
+        <name>modal_notes</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-13 15:20:16</sys_created_on>
+        <sys_id>3b6a6f878342ca10c54c1e60ceaad33a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>modal_notes</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ui_page_3b6a6f878342ca10c54c1e60ceaad33a</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 15:13:05</sys_updated_on>
+    </sys_ui_page>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262ba0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_page_3b6a6f878342ca10c54c1e60ceaad33a</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>b7a8f5ae47eec6908bb7bf99516d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

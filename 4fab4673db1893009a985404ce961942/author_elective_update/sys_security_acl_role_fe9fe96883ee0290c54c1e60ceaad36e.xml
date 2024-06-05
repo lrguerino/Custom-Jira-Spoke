@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-30 08:29:14</sys_created_on>
+        <sys_id>fe9fe96883ee0290c54c1e60ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_attachment.snc_internal</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_security_acl display_value="">148f296883ee0290c54c1e60ceaad3d4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 08:29:14</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-30 08:29:14</sys_created_on><sys_id>fe9fe96883ee0290c54c1e60ceaad36e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_attachment.snc_internal</sys_name><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_security_acl display_value="">148f296883ee0290c54c1e60ceaad3d4</sys_security_acl><sys_update_name>sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-30 08:29:14</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1617699636</payload_hash>
+        <record_name>sys_attachment.snc_internal</record_name>
+        <reverted_from/>
+        <source>4fab4673db1893009a985404ce961942</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-05-30 08:29:14</sys_created_on>
+        <sys_id>93a0b1e883ee0290c54c1e60ceaad336</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18fc89e13900000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>53a0b1e82eee029032ae86695e461e36</update_guid>
+        <update_guid_history>53a0b1e82eee029032ae86695e461e36:-1617699636</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sys_attachment.snc_internal">53a0b1e883ee0290c54c1e60ceaad338</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-30 08:33:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1b21d8065ed449489dd2db14199dcde1</sys_id>
+        <sys_metadata>fe9fe96883ee0290c54c1e60ceaad36e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_attachment.snc_internal</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e">93a0b1e883ee0290c54c1e60ceaad336</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-30 08:33:54</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262cc0000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_fe9fe96883ee0290c54c1e60ceaad36e</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>b3a8f5ae47eec6908bb7bf99516d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

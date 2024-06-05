@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Jira Information SOW">beb68c2d47dac2508bb7bf99516d437e</macroponent>
+        <name>Open Create Modal</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+  
+            api.emit('MACROPONENT_VIEWPORT_LOAD_REQUESTED', {
+                viewportElementId: 'modal_viewport',
+                route: 'sowformmodal',
+                fields: {
+                    table: api.context.props.table,
+                    sysId: api.context.props.recordSysId,
+                    title: "Assign",
+                },
+                params: {
+                    "modalPath": "assign_modal",
+                    "fields": JSON.stringify(api.context.props.fields),
+                    "requiredFields": ["assignment_group", "assigned_to", "work_notes"],
+                    "isGFormSave": "true",
+                }
+            });
+        
+
+     //api.emit('SOW_RECORD_UI_ACTION#EXECUTE_UI_ACTION', {
+              //  actionSysId : "960bebc78342ca10c54c1e60ceaad369"
+          //  });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 08:46:28</sys_created_on>
+        <sys_id>6100f91a4756c6508bb7bf99516d4311</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Open Create Modal</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 08:51:38</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Jira Information SOW"&gt;beb68c2d47dac2508bb7bf99516d437e&lt;/macroponent&gt;&lt;name&gt;Open Create Modal&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+  
+            api.emit('MACROPONENT_VIEWPORT_LOAD_REQUESTED', {
+                viewportElementId: 'modal_viewport',
+                route: 'sowformmodal',
+                fields: {
+                    table: api.context.props.table,
+                    sysId: api.context.props.recordSysId,
+                    title: "Assign",
+                },
+                params: {
+                    "modalPath": "assign_modal",
+                    "fields": JSON.stringify(api.context.props.fields),
+                    "requiredFields": ["assignment_group", "assigned_to", "work_notes"],
+                    "isGFormSave": "true",
+                }
+            });
+        
+
+     //api.emit('SOW_RECORD_UI_ACTION#EXECUTE_UI_ACTION', {
+              //  actionSysId : "960bebc78342ca10c54c1e60ceaad369"
+          //  });
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-23 08:46:28&lt;/sys_created_on&gt;&lt;sys_id&gt;6100f91a4756c6508bb7bf99516d4311&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Open Create Modal&lt;/sys_name&gt;&lt;sys_package display_value="Jira Spoke" source="sn_jira_spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Jira Spoke"&gt;4fab4673db1893009a985404ce961942&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;lucas.guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-23 08:51:38&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>380181966</payload_hash>
+        <record_name>Open Create Modal</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 08:51:38</sys_created_on>
+        <sys_id>fa91bd1e4756c6508bb7bf99516d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa4a614ff0000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 08:51:38</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>7291bd1edb56c6507ed2e9aaf2b7a5e6</update_guid>
+        <update_guid_history>7291bd1edb56c6507ed2e9aaf2b7a5e6:380181966,9b6035daf256c650c9b3ada0beef8fa7:-87627837</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-23 08:56:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>4084835c1f984c42988b924eda237004</sys_id>
+        <sys_metadata>6100f91a4756c6508bb7bf99516d4311</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Create Modal</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311">fa91bd1e4756c6508bb7bf99516d43e6</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-23 08:56:29</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c25ff80000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_6100f91a4756c6508bb7bf99516d4311</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:43</sys_created_on>
+        <sys_id>6fa8f5ae47eec6908bb7bf99516d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:43</sys_updated_on>
+    </sys_claim>
+</record_update>

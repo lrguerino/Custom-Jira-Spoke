@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Comma-separated list of task tables available for the integration between the Jira Cloud Platform and ServiceNow ITSM modules.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_jira_spoke.itsm.api.outbound.available_tables</name>
+        <read_roles>sn_jira_spoke.jira_admin</read_roles>
+        <suffix>itsm.api.outbound.available_tables</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-13 10:50:25</sys_created_on>
+        <sys_id>d52cea8b834e8a10c54c1e60ceaad373</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>sn_jira_spoke.itsm.api.outbound.available_tables</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_properties_d52cea8b834e8a10c54c1e60ceaad373</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 13:26:45</sys_updated_on>
+        <type>string</type>
+        <value>incident_task,problem_task,change_task,sc_task</value>
+        <write_roles>sn_jira_spoke.jira_admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=d52cea8b834e8a10c54c1e60ceaad373"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Jira Spoke">4fab4673db1893009a985404ce961942</application>
+        <file_path/>
+        <instance_id>f1924a18db79f11402d917291396196a</instance_id>
+        <instance_name>envisionpharmadev</instance_name>
+        <name>sys_properties_d52cea8b834e8a10c54c1e60ceaad373</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Comma-separated list of task tables available for the integration between the Jira Cloud Platform and ServiceNow ITSM modules.</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>sn_jira_spoke.itsm.api.outbound.available_tables</name><read_roles>sn_jira_spoke.jira_admin</read_roles><suffix>itsm.api.outbound.available_tables</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>lucas.guerino@crossfuze.com</sys_created_by><sys_created_on>2024-05-13 10:50:25</sys_created_on><sys_id>d52cea8b834e8a10c54c1e60ceaad373</sys_id><sys_mod_count>15</sys_mod_count><sys_name>sn_jira_spoke.itsm.api.outbound.available_tables</sys_name><sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package><sys_policy/><sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope><sys_update_name>sys_properties_d52cea8b834e8a10c54c1e60ceaad373</sys_update_name><sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-05-22 13:26:45</sys_updated_on><type>string</type><value>incident_task,problem_task,change_task,sc_task</value><write_roles>sn_jira_spoke.jira_admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=d52cea8b834e8a10c54c1e60ceaad373"/></record_update>]]></payload>
+        <payload_hash>-695547961</payload_hash>
+        <record_name>sn_jira_spoke.itsm.api.outbound.available_tables</record_name>
+        <reverted_from/>
+        <source>2580eacf830e8a10c54c1e60ceaad348</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-22 13:26:45</sys_created_on>
+        <sys_id>43f6218e471686508bb7bf99516d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa07b98750000001</sys_recorded_at>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-22 13:26:45</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>c7f6218e01168650f145c53e9c51a8af</update_guid>
+        <update_guid_history>c7f6218e01168650f145c53e9c51a8af:-695547961,f7e6ed4e0a1686509ffdf434987148aa:1746622559,f2d6a9f188d24650130def5b66b44e2c:-695547961,e4d669f1e0d24650019f1237a9d0fb34:1746622559,2707d3edfc1a0650c8bae8736703ca95:362626295,76c3e795d85ac250361b8b63f0a1a4f8:-79217178,a8b3a795335ac2507c2c788018ba97c8:728809327,cc6b66559856c250886bd0464cd885a4:-79217178,e46035cd09de8250b7cf2084b8e6164b:-695547961,2b40f1cd0fde8250ec38fd864b26c997:1746622559,caca6698c0160250c797054a8a0c1597:-695547961,9e5b29cc2f9e8e103b8d9fbf0b19cc2e:-560184266,d6d7cb43a2ce8a10790780dea0dbe2dc:-809510726,da850bcf918e8a105eae9fb3d52b3362:-475975740,c60fbe0ba78e8a1092b8b9e5966b7f2a:-1189956700,55ec228bdc4e8a10cbae464caf98ecbb:-2089617159</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-28 10:19:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>163d7d416d5b4a0695136695b3090551</sys_id>
+        <sys_metadata>d52cea8b834e8a10c54c1e60ceaad373</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_jira_spoke.itsm.api.outbound.available_tables</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_scope_delete display_value="">9e2c6f0c972e47e090b1e856f0343ca4</sys_scope_delete>
+        <sys_update_name>sys_properties_d52cea8b834e8a10c54c1e60ceaad373</sys_update_name>
+        <sys_update_version display_value="sys_properties_d52cea8b834e8a10c54c1e60ceaad373">43f6218e471686508bb7bf99516d43b0</sys_update_version>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-28 10:19:01</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c262430000001</claim_timestamp>
+        <metadata_update_name>sys_properties_d52cea8b834e8a10c54c1e60ceaad373</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>37a8f5ae47eec6908bb7bf99516d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

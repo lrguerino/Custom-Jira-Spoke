@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Service Operations Workspace">4d69d0ed73c4301045216238edf6a7ea</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[
+    {
+        "eventMappingId": "clwjddjvhccaabbfeeddbhhtqrjuxmwbb",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "sn_jira_spoke.RECORD#GFORM_SET_VALUE_RELAY_beb68c2d47dac2508bb7bf99516d437e",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "sn_jira_spoke.RECORD#GFORM_SET_VALUE_RELAY_beb68c2d47dac2508bb7bf99516d437e",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_record_page.RECORD#GFORM_SET_VALUE",
+                    "payload": {
+                        "container": {
+                            "displayValue": {
+                                "binding": {
+                                    "address": [
+                                        "displayValue"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fieldName": {
+                                "binding": {
+                                    "address": [
+                                        "fieldName"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "value": {
+                                "binding": {
+                                    "address": [
+                                        "value"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    },
+                    "sysId": "f8d5cc6c0f0310107d20409dc4767e51"
+                },
+                "operation": null,
+                "targetId": "clwjddjvhccaabbfddddbhhtixjjuqwcc",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="Jira Task Information">beb68c2d47dac2508bb7bf99516d437e</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "recordSysId": {
+        "binding": {
+            "address": [
+                "sysId"
+            ],
+            "category": "props"
+        },
+        "type": "CONTEXT_BINDING"
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    },
+    "table": {
+        "binding": {
+            "address": [
+                "table"
+            ],
+            "category": "props"
+        },
+        "type": "CONTEXT_BINDING"
+    }
+}</macroponent_config>
+        <name>Jira Task Information</name>
+        <order>100</order>
+        <parent_macroponent display_value="Record sow">fc319b36537030102d05ddeeff7b12bd</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Jira Information">f2b68ce947dac2508bb7bf99516d434a</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-20 17:09:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6b68c2d47dac2508bb7bf99516d4382</sys_id>
+        <sys_mod_count>488</sys_mod_count>
+        <sys_name>Jira Task Information</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_ux_screen_b6b68c2d47dac2508bb7bf99516d4382</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-04 08:47:18</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=b6b68c2d47dac2508bb7bf99516d4382"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c260ef0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_b6b68c2d47dac2508bb7bf99516d4382</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>67a8f5ae47eec6908bb7bf99516d4365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

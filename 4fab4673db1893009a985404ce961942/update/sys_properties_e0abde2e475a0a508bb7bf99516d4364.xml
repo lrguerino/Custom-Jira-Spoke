@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Identifier of the custom field that will store the ServiceNow severity field in Jira.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_jira_spoke.severity.customfield_id</name>
+        <read_roles>sn_jira_spoke.jira_admin</read_roles>
+        <suffix>severity.customfield_id</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-24 06:33:44</sys_created_on>
+        <sys_id>e0abde2e475a0a508bb7bf99516d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_jira_spoke.severity.customfield_id</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_properties_e0abde2e475a0a508bb7bf99516d4364</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-24 06:33:44</sys_updated_on>
+        <type>string</type>
+        <value>11166</value>
+        <write_roles>sn_jira_spoke.jira_admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e0abde2e475a0a508bb7bf99516d4364"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c261180000001</claim_timestamp>
+        <metadata_update_name>sys_properties_e0abde2e475a0a508bb7bf99516d4364</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>3ba8f5ae47eec6908bb7bf99516d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>

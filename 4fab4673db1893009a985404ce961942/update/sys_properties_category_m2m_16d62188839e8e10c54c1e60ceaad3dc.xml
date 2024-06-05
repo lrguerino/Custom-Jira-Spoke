@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Jira Cloud Integration">3c12a504839e8e10c54c1e60ceaad30d</category>
+        <order>200</order>
+        <property display_value="sn_jira_spoke.api.service_account.id" name="sn_jira_spoke.api.service_account.id">74d66188839e8e10c54c1e60ceaad387</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-05-16 08:18:19</sys_created_on>
+        <sys_id>16d62188839e8e10c54c1e60ceaad3dc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sn_jira_spoke.api.service_account.id.Jira Cloud Integration</sys_name>
+        <sys_package display_value="Jira Spoke" source="sn_jira_spoke">4fab4673db1893009a985404ce961942</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_16d62188839e8e10c54c1e60ceaad3dc</sys_update_name>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-05-16 08:18:28</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Jira Spoke">4fab4673db1893009a985404ce961942</claim_owner_scope>
+        <claim_timestamp>18fe8c263cd0000001</claim_timestamp>
+        <metadata_update_name>sys_properties_category_m2m_16d62188839e8e10c54c1e60ceaad3dc</metadata_update_name>
+        <previous_claim_app_version>4.4.0</previous_claim_app_version>
+        <previous_claim_name>Jira Spoke</previous_claim_name>
+        <previous_claim_scope>4fab4673db1893009a985404ce961942</previous_claim_scope>
+        <sys_created_by>lucas.guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-06-05 14:16:44</sys_created_on>
+        <sys_id>b7a8f5ae47eec6908bb7bf99516d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-06-05 14:16:44</sys_updated_on>
+    </sys_claim>
+</record_update>
